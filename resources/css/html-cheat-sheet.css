@@ -1,0 +1,53 @@
+* {
+  background-color: #1E1E1E;
+  color: white;
+  font-family: "Consolas", "monaco", monospace;
+}
+
+.tag, .html-tag {
+  color: #569CD6;
+}
+
+.attribute {
+  color: #9CDCFE;
+}
+
+.attribute-val, .attribute-vali {
+  color: #CE9178; 
+}
+
+.attribute-vali {
+  font-style: italic;
+}
+
+.tag-indicator {
+  color: #808080;
+}
+
+thead {
+  font-weight: bold;
+}
+
+table, th, td {
+  border: 1px solid;
+  border-color: #808080;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #808080;
+}
+
+section {
+  margin-top: 50px;
+}
+
+#tfoot-section {
+  text-align: right;
+}
+
+.needs-work {
+  background-color: red;
+  color: white;
+  text-align: center;
+}
