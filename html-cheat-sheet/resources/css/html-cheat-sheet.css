@@ -46,8 +46,9 @@ section {
   text-align: right;
 }
 
-.needs-work {
+.needs-work, .learn-me {
   background-color: red;
   color: white;
   text-align: center;
 }
+

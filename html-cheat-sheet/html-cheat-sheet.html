@@ -49,6 +49,29 @@
         <tfoot>
         </tfoot>
       </table>
+
+      <h2>File Tag Attributes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Attribute</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>html<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">xmlns</span>=<span class="attribute-val">"http://www.w3.org/1999/xhtml"</span></td>
+              <td>Specifies xml namespace attribute if you need to conform to XHTML</td>
+              <td></span>
+            </tr>
+          </tbody>
+          <tfoot>
+          </tfoot>  
+        </table>
+
     </section>
 
     <section class="html-tags" id="html-headtags">
@@ -101,14 +124,43 @@
         <tfoot>
         </tfoot>
       </table>
-    </section>
+
+      <h2>Header Tag Attributes (see below for <span class="tag-indicator">&lt;</span><span class="html-tag">meta</span><span class="tag-indicator">&gt;</span>)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Attribute</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>script<span class="tag-indicator">&gt;</span></td>
+              <td></td>
+              <td>See <a href="https://www.w3schools.com/tags/tag_script.asp" target="_blank">W<sup>3</sup> Schools</a> for attributes & values</td>
+              <td></span>
+            </tr>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>style<span class="tag-indicator">&gt;</span></td>
+              <td></td>
+              <td>See <a href="https://www.w3schools.com/tags/tag_style.asp" target="_blank">W<sup>3</sup> Schools</a> for attributes & values</td>
+              <td></span>
+            </tr>
+          </tbody>
+          <tfoot>
+          </tfoot>  
+        </table>
+
+      </section>
 
     <section class="html-tags" id="meta-tags">
       <h1>Meta Tags (in <span class="tag-indicator">&lt;</span><span class="html-tag">head</span><span class="tag-indicator">&gt;</span>)</h1>
       <table>
         <thead>
           <tr>
-            <th>Attribute/Name</th>
+            <th>Attribute/Value</th>
             <th>Example</th>
             <th>Description</th>
           </tr>
@@ -128,6 +180,11 @@
             <td class="meta-attribute">X-UA-Compatible</td>
             <td><span class="tag-indicator">&lt;</span>meta http-equiv="X-UA-Compatible" content="ie=edge"<span class="tag-indicator">&gt;</span></td>
             <td>Specifies the document mode for Internet Explorer. IE=Edge is the highest supported mode.</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>See <a href="https://www.w3schools.com/tags/tag_meta.asp" target="_blank">W<sup>3</sup> Schools</a> for more values</td>
+            <td></td>
           </tr>
         </tbody>
         <tfoot>
@@ -344,6 +401,47 @@
         <tfoot>
         </tfoot>
       </table>
+
+      <h2>Formatting Tag Attributes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Attribute</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">cte</span>=<span class="attribute-vali">"url"</span></td>
+              <td>Gives a url to a document saying why text was deleted</td>
+              <td></span>
+            </tr>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">datetime</span>=<span class="attribute-vali">"YYYY-MM-DDThh:mm:ssTZD"</span></td>
+              <td>Gives a datetime for when text was deleted</td>
+              <td></span>
+            </tr>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">cte</span>=<span class="attribute-vali">"url"</span></td>
+              <td>Gives a url to a document saying why text was added</td>
+              <td></span>
+            </tr>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">datetime</span>=<span class="attribute-vali">"YYYY-MM-DDThh:mm:ssTZD"</span></td>
+              <td>Gives a datetime for when text was added</td>
+              <td></span>
+            </tr>
+          </tbody>
+          <tfoot>
+          </tfoot>  
+        </table>
+
     </section>
 
     <section class="html-tags" id="quotes-tags">
@@ -469,19 +567,19 @@
           <tbody>
             <tr>
               <td class="html-tag"><span class="tag-indicator">&lt;</span>td<span class="tag-indicator">&gt;</span></td>
-              <td><span class="attribute">colspan</span>=<span class="attribute-vali">"number"</span><span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">colspan</span>=<span class="attribute-vali">"number"</span></td>
               <td>Specifies number of columns to span (default=1)</td>
               <td><span class="tag-indicator">&lt;</span><span class="tag">td</span> <span class="attribute">colspan</span>=<span class="attribute-val">"2"</span><span class="tag-indicator">&gt;</span>
             </tr>
             <tr>
               <td class="html-tag"><span class="tag-indicator">&lt;</span>td<span class="tag-indicator">&gt;</span></td>
-              <td><span class="attribute">rowspan</span>=<span class="attribute-vali">"number"</span><span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">rowspan</span>=<span class="attribute-vali">"number"</span></td>
               <td>Specifies number of rows to span (default=1)</td>
-              <td><span class="tag-indicator">&lt;</span><span class="tag">td</span> <span class="attribute">rowspan</span>=<span class="attribute-val">"2"</span><span class="tag-indicator">&gt;</span>
+              <td><span class="tag-indicator">&lt;</span><span class="tag">td</span> <span class="attribute">rowspan</span>=<span class="attribute-val">"2"</span><span class="tag-indicator">&gt;</span></td>
             </tr>
             <tr>
               <td class="html-tag"><span class="tag-indicator">&lt;</span>td<span class="tag-indicator">&gt;</span></td>
-              <td><span class="attribute">headers</span>=<span class="attribute-vali">"header_id"</span><span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">headers</span>=<span class="attribute-vali">"header_id"</span></td>
               <td>Specifies one or more header cells a row is related to</td>
               <td class="needs-work">***</td>
               <!--
@@ -541,8 +639,8 @@
         <tbody>
           <tr>
             <td>attribute</td>
-            <td class="attribute">href</td>
-            <td>Indicates the link's destination</td>
+            <td><span class="attribute">href</span>=<span class="attribute-vali">"url"</span></td>
+            <td>Defines a link to "url" (site or local file)</td>
             <td><span class="tag-indicator">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>=<span class="attribute-val">"http://www.google.com"</span><span class="tag-indicator">&gt;</span>Google<span class="tag-indicator">&lt;</span><span class="tag">/a</span><span class="tag-indicator">&gt;</span></td>
             <td><a href="http://www.google.com">Google</a></td>
           </tr>
@@ -587,7 +685,7 @@
             <td><a href="http://www.google.com" target="_top">Google</a></td>
           </tr>
           <tr>
-            <td>attribute value</td>
+            <td class="learn-me">attribute value</td>
             <td><span class="attribute">target</span>=<span class="attribute-vali">"framename"</span></td>
             <td>Opens in the named iframe</td>
             <td></td>
@@ -597,6 +695,27 @@
               <span class="attribute">target</span>=<span class="attribute-val">"_top"</span><span class="tag-indicator">&gt;</span>Google<span class="tag-indicator">&lt;</span><span class="tag">/a</span><span class="tag-indicator">&gt;</span></td>
             <td><a href="http://www.google.com" target="_top">Google</a></td>
             -->
+          </tr>
+          <tr>
+            <td class="learn-me">attribute</td>
+            <td><span class="attribute">type</span>=<span class="attribute-vali">"media_type"</span></td>
+            <td>Specifies the media type of the linked document</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="learn-me">attribute</td>
+            <td><span class="attribute">media</span>=<span class="attribute-vali">"media_query"</span></td>
+            <td>Specifies what media/device the linked document is optimized for</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>attribute</td>
+            <td><span class="attribute">download, hreflang, ping, referrerpolicy, rel</span></td>
+            <td>See <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">W<sup>3</sup> Schools</a> for these attributes </td>
+            <td></td>
+            <td></td>
           </tr>
         </tbody>
         <tfoot>
