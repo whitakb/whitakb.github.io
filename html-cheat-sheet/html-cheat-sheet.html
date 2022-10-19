@@ -374,18 +374,6 @@
             <td><small>small text</small></td>
           </tr>
           <tr>
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
-            <td>Deleted</td>
-            <td></td>
-            <td><del>deleted text</del></td>
-          </tr>
-          <tr>
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
-            <td>Inserted</td>
-            <td></td>
-            <td><ins>inserted text</ins></td>
-          </tr>
-          <tr>
             <td class="html-tag"><span class="tag-indicator">&lt;</span>sub<span class="tag-indicator">&gt;</span></td>
             <td>Subscripted</td>
             <td></td>
@@ -401,46 +389,6 @@
         <tfoot>
         </tfoot>
       </table>
-
-      <h2>Formatting Tag Attributes</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Tag</th>
-              <th>Attribute</th>
-              <th>Description</th>
-              <th>Example</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
-              <td><span class="attribute">cte</span>=<span class="attribute-vali">"url"</span></td>
-              <td>Gives a url to a document saying why text was deleted</td>
-              <td></span>
-            </tr>
-            <tr>
-              <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
-              <td><span class="attribute">datetime</span>=<span class="attribute-vali">"YYYY-MM-DDThh:mm:ssTZD"</span></td>
-              <td>Gives a datetime for when text was deleted</td>
-              <td></span>
-            </tr>
-            <tr>
-              <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
-              <td><span class="attribute">cte</span>=<span class="attribute-vali">"url"</span></td>
-              <td>Gives a url to a document saying why text was added</td>
-              <td></span>
-            </tr>
-            <tr>
-              <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
-              <td><span class="attribute">datetime</span>=<span class="attribute-vali">"YYYY-MM-DDThh:mm:ssTZD"</span></td>
-              <td>Gives a datetime for when text was added</td>
-              <td></span>
-            </tr>
-          </tbody>
-          <tfoot>
-          </tfoot>  
-        </table>
 
     </section>
 
@@ -592,10 +540,87 @@
         </table>
     </section>
 
+    <section class="html-tags" id="html-changes">
+      <h1>Content Change Tags (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Sample</th>
+          </tr>
+        </thead>
+        <tbody>
+    <tr>
+      <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
+      <td>Deleted</td>
+      <td>Deleted text</td>
+      <td><del>deleted text</del></td>
+    </tr>
+    <tr>
+      <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
+      <td>Inserted</td>
+      <td>Inserted/added</td>
+      <td><ins>inserted text</ins></td>
+    </tr>
+    <tr>
+      <td class="html-tag"><span class="tag-indicator">&lt;</span>s<span class="tag-indicator">&gt;</span></td>
+      <td>Superseded?</td>
+      <td>Text no longer relevant or incorrect</td>
+      <td><s>No longer relevant</s></td>
+    </tr>
+  </tbody>
+  <tfoot>
+  </tfoot>  
+</table>
+
+<h2>Content Change Tag Attributes</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Attribute</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
+      <td><span class="attribute">cte</span>=<span class="attribute-vali">"url"</span></td>
+      <td>Gives a url to a document saying why text was deleted</td>
+      <td></span>
+    </tr>
+    <tr>
+      <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
+      <td><span class="attribute">datetime</span>=<span class="attribute-vali">"YYYY-MM-DDThh:mm:ssTZD"</span></td>
+      <td>Gives a datetime for when text was deleted</td>
+      <td></span>
+    </tr>
+    <tr>
+      <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
+      <td><span class="attribute">cte</span>=<span class="attribute-vali">"url"</span></td>
+      <td>Gives a url to a document saying why text was added</td>
+      <td></span>
+    </tr>
+    <tr>
+      <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
+      <td><span class="attribute">datetime</span>=<span class="attribute-vali">"YYYY-MM-DDThh:mm:ssTZD"</span></td>
+      <td>Gives a datetime for when text was added</td>
+      <td></span>
+    </tr>
+  </tbody>
+  <tfoot>
+  </tfoot>  
+</table>
+
+</section>
+
 
   
-    <section class="html-tags" id="other-tags">
-      <h1>Other Tags</h1>
+    <section class="html-tags" id="hyperlink-tags">
+      <h1>Hyperlink Tags</h1>
       <table>
         <thead>
           <tr>
@@ -612,19 +637,11 @@
             <td>Defines a hyperlink</td>
             <td></td>
           </tr>
-          <tr>
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>!-- --<span class="tag-indicator">&gt;</span></td>
-            <td>Comment</td>
-            <td>Hides text from display in browser</td>
-            <td><a href="hyperlink-def">About Hyperlinks</a></td>
-          </tr>
         </tbody>
         <tfoot>
         </tfoot>
       </table>
-    </section>
 
-    <section class="html-tags" id="hyperlink-def">
       <h1>Hyperlink Attributes (<span class="tag-indicator">&lt;</span><span class="html-tag">a</span><span class="tag-indicator">&gt;</span>)</h1>
       <table>
         <thead>
@@ -722,6 +739,31 @@
         </tfoot>
       </table>
     </section>
+
+    <section class="html-tags" id="other-tags">
+      <h1>Other Tags</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Sample</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>!-- --<span class="tag-indicator">&gt;</span></td>
+            <td>Comment</td>
+            <td>Hides text from display in browser</td>
+            <td><a href="hyperlink-def">About Hyperlinks</a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+    </section>
+
 
   </main>
 
