@@ -219,8 +219,8 @@
       </table>
     </section>
 
-    <section class="html-tags" id="semantic-tags">
-      <h1>Semantic Tags (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
+    <section class="html-tags" id="basic-tags">
+      <h1>Basic Tags (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
       <table>
         <thead>
           <tr>
@@ -230,6 +230,63 @@
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>h1<span class="tag-indicator">&gt;</span> (1-6)</td>
+            <td>Heading</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>p<span class="tag-indicator">&gt;</span></td>
+            <td>Paragraph</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>hr<span class="tag-indicator">&gt;</span></td>
+            <td>Horizontal Rule (empty tag)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>br<span class="tag-indicator">&gt;</span></td>
+            <td>Line Break (empty tag)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>pre<span class="tag-indicator">&gt;</span></td>
+            <td>Preformatted text</td>
+            <td>Preserves line breaks & spaces. Normally displays in Courier.</td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>!-- --<span class="tag-indicator">&gt;</span></td>
+            <td>Comment</td>
+            <td>Hides text from display in browser</td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+    </section>
+  
+     <section class="html-tags" id="semantic-tags">
+      <h1>Style and Semantic Tags (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>span<span class="tag-indicator">&gt;</span></td>
+            <td>Span</td>
+            <td>Defines an inline container for styling</td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>div<span class="tag-indicator">&gt;</span></td>
+            <td>Div</td>
+            <td>Defines a section (block) for styling</td>
+          </tr>
           <tr>
             <td class="html-tag"><span class="tag-indicator">&lt;</span>header<span class="tag-indicator">&gt;</span></td>
             <td>Header</td>
@@ -296,9 +353,10 @@
             <td>Defines a visible heading for a <span class="tag-indicator">&lt;</span>details<span class="tag-indicator">&gt;</span> element</td>
           </tr>
           <tr>
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>time<span class="tag-indicator">&gt;</span></td>
-            <td>Time</td>
-            <td>Defines a date/time</td>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>dialog<span class="tag-indicator">&gt;</span></td>
+            <td>Dialog</td>
+            <td>Defines dialog box or subwindow</td>
+            <td><dialog>This is a dialog box</dialog></td>
           </tr>
         </tbody>
         <tfoot>
@@ -308,7 +366,7 @@
         </tfoot>
       </table>
 
-      <h2>Semantic Tags Attributes</h2>
+      <h2>Style and Semantic Tags Attributes</h2>
         <table>
           <thead>
             <tr>
@@ -326,62 +384,19 @@
               <td></td>
             </tr>
             <tr>
-              <td class="html-tag"><span class="tag-indicator">&lt;</span>time<span class="tag-indicator">&gt;</span></td>
-              <td><span class="attribute">datetime</span>=<span class="attribute-vali">"datetime in machine-readable format"</span></td>
-              <td>Provides an invisible, machine-readable time for search, calendars, etc</td>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>dialog<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">open</span> (no value)</td>
+              <td>Makes the dialog box visible</td>
               <td></td>
             </tr>
-          </tbody>
+            </tbody>
           <tfoot>
           </tfoot>  
         </table>
 
-
     </section>
   
-    <section class="html-tags" id="content-tags">
-      <h1>General Content Tags (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Tag</th>
-            <th>Name</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>h1<span class="tag-indicator">&gt;</span> (1-6)</td>
-            <td>Heading</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>p<span class="tag-indicator">&gt;</span></td>
-            <td>Paragraph</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>hr<span class="tag-indicator">&gt;</span></td>
-            <td>Horizontal Rule (empty tag)</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>br<span class="tag-indicator">&gt;</span></td>
-            <td>Line Break (empty tag)</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>pre<span class="tag-indicator">&gt;</span></td>
-            <td>Preformatted text</td>
-            <td>Preserves line breaks & spaces. Normally displays in Courier.</td>
-          </tr>
-        </tbody>
-        <tfoot>
-        </tfoot>
-      </table>
-    </section>
-  
-    <section class="html-tags" id="formatting-tags">
+   <section class="html-tags" id="formatting-tags">
       <h1>Formatting Tags (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
       <table>
         <thead>
@@ -430,6 +445,12 @@
             <td><small>small text</small></td>
           </tr>
           <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>bdo<span class="tag-indicator">&gt;</span></td>
+            <td>Bi-directional override</td>
+            <td>Overrides the current text direction</td>
+            <td><bdo dir="rtl">Text set to rtl</bdo></td>
+          </tr>
+          <tr>
             <td class="html-tag"><span class="tag-indicator">&lt;</span>sub<span class="tag-indicator">&gt;</span></td>
             <td>Subscripted</td>
             <td></td>
@@ -441,10 +462,135 @@
             <td></td>
             <td>ex: <sup>superscripted</sup></td>
           </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>u<span class="tag-indicator">&gt;</span></td>
+            <td>Unarticulated</td>
+            <td>Unarticulated text styled differently, like mispelled words. Careful, might look like hyperlink without styling</td>
+            <td><u>mispeled</u></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>dfn<span class="tag-indicator">&gt;</span></td>
+            <td>Definition Element</td>
+            <td>Specifies a term that will be defined. Useful with ID attribute to link to. Use title attribute for hover. </td>
+            <td><dfn title="a drink">Tea</dfn> is a drink</td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>time<span class="tag-indicator">&gt;</span></td>
+            <td>Time</td>
+            <td>Defines a date/time</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>data<span class="tag-indicator">&gt;</span></td>
+            <td>Data</td>
+            <td>Add machine-readable translation of content (like <span class="tag-indicator">&lt;</span><span class="html-tag">time</span><span class="tag-indicator">&gt;</span>)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>samp<span class="tag-indicator">&gt;</span></td>
+            <td>Sample Code</td>
+            <td>Sample output from computer program</td>
+            <td><samp>Hello World!</samp></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>code<span class="tag-indicator">&gt;</span></td>
+            <td>Program Code</td>
+            <td>Program code snippet</td>
+            <td><code>print('Hello World!)</code></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>wbr<span class="tag-indicator">&gt;</span></td>
+            <td>Word break opportunity</td>
+            <td>Suggest where to break a long word</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>var<span class="tag-indicator">&gt;</span></td>
+            <td>Variable</td>
+            <td>A variable in a math expression. Not depricated, but CSS is usually better</td>
+            <td>area = 1/2 x <var>b</var> x <var>h</var></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>kbd<span class="tag-indicator">&gt;</span></td>
+            <td>Keyboard Input</td>
+            <td>Identifies text which is keyboard input</td>
+            <td><kbd>Ctrl - s</kbd></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>template<span class="tag-indicator">&gt;</span></td>
+            <td>Hold hidden contet</td>
+            <td>Content is hidden inside the template tag until displayed by some JavaScript</td>
+            <td><kbd></kbd></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>bdi<span class="tag-indicator">&gt;</span></td>
+            <td>Bi-directional Indicator</td>
+            <td>Isolates text that may go in any direction (like included Arabic)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>ruby<span class="tag-indicator">&gt;</span></td>
+            <td rowspan="3">Ruby annotation</td>
+            <td rowspan="3">To handle East Asian text</td>
+            <td rowspan="3"></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>rt<span class="tag-indicator">&gt;</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>rp<span class="tag-indicator">&gt;</span></td>
+          </tr>
         </tbody>
         <tfoot>
         </tfoot>
       </table>
+
+
+      <h2>Formatting Tags Attributes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>bdo<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">dir</span> (required)</td>
+            <td>dir attribute gives direction</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>bdo<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">dir</span>=<span class="attribute-val">"ltr"</span></td>
+            <td>specifies left to right</td>
+            <td><bdo dir="ltr">left to right</bdo></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>bdo<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">dir</span>=<span class="attribute-val">"rtl"</span></td>
+            <td>right to left</td>
+            <td><bdo dir="rtl">right to left</bdo></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>time<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">datetime</span>=<span class="attribute-vali">"datetime in machine-readable format"</span></td>
+            <td>Provides an invisible, machine-readable time for search, calendars, etc</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>data<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">value</span>=<span class="attribute-vali">"machine-readable format value"</span></td>
+            <td>Provides an invisible, machine-readable time for other programs</td>
+            <td></td>
+          </tr>
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table>
 
     </section>
 
@@ -489,12 +635,6 @@
             <td>Abbreviation</td>
             <td>Signifies abbreviation or acronym</td>
             <td><abbr title="Hypertext Markup Language">HTML</abbr> (see what happens when you hover over me)</td>
-          </tr>
-          <tr>
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>bdo<span class="tag-indicator">&gt;</span></td>
-            <td>Bi-directional override</td>
-            <td>Overrides the current text direction</td>
-            <td><bdo dir="rtl">Text set to rtl</bdo></td>
           </tr>
         </tbody>
         <tfoot>
@@ -808,12 +948,6 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>!-- --<span class="tag-indicator">&gt;</span></td>
-            <td>Comment</td>
-            <td>Hides text from display in browser</td>
-            <td><a href="hyperlink-def">About Hyperlinks</a></td>
-          </tr>
         </tbody>
         <tfoot>
         </tfoot>
