@@ -65,7 +65,7 @@
               <td class="html-tag"><span class="tag-indicator">&lt;</span>html<span class="tag-indicator">&gt;</span></td>
               <td><span class="attribute">xmlns</span>=<span class="attribute-val">"http://www.w3.org/1999/xhtml"</span></td>
               <td>Specifies xml namespace attribute if you need to conform to XHTML</td>
-              <td></span>
+              <td></td>
             </tr>
           </tbody>
           <tfoot>
@@ -321,21 +321,6 @@
             <td class="html-tag"><span class="tag-indicator">&lt;</span>details<span class="tag-indicator">&gt;</span></td>
             <td>Details</td>
             <td>Defines additional details that the user can view or hide</td>
-          </tr>
-          <tr>
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>figure<span class="tag-indicator">&gt;</span></td>
-            <td>Figure</td>
-            <td>Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
-          </tr>
-          <tr class="figure-tag">
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>figcaption<span class="tag-indicator">&gt;</span></td>
-            <td>Figure Caption</td>
-            <td>defines a caption for a <span class="tag-indicator">&lt;</span>figure<span class="tag-indicator">&gt;</span> element. The <span class="tag-indicator">&lt;</span>figcaption<span class="tag-indicator">&gt;</span> element can be placed as the first or as the last child of a <span class="tag-indicator">&lt;</span>figure<span class="tag-indicator">&gt;</span> element</td>
-          </tr>
-          <tr class="figure-tag">
-            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
-            <td>Image</td>
-            <td>Defines the image for a <span class="tag-indicator">&lt;</span>figure<span class="tag-indicator">&gt;</span> tag</td>
           </tr>
           <tr>
             <td class="html-tag"><span class="tag-indicator">&lt;</span>main<span class="tag-indicator">&gt;</span></td>
@@ -594,6 +579,101 @@
 
     </section>
 
+    <section class="html-tags" id="formatting-tags">
+      <h1>List Tags (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Sample</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>ul<span class="tag-indicator">&gt;</span></td>
+            <td>Unordered List</td>
+            <td>Defines an unordered list (bulleted)</td>
+            <td><ul><li>Unordered List Item</li></ul></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>ol<span class="tag-indicator">&gt;</span></td>
+            <td>Ordered List</td>
+            <td>Defines an irdered list (numeric)</td>
+            <td><ol><li>Ordered List Item</li></ol></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>li<span class="tag-indicator">&gt;</span></td>
+            <td>List Item</td>
+            <td>Identifies an item in a list</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>dl<span class="tag-indicator">&gt;</span></td>
+            <td>Description List</td>
+            <td>Specifies a list with items and descriptions</td>
+            <td><dl><dt>Word</dt><dd>Definition</dd></dl></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>dt<span class="tag-indicator">&gt;</span></td>
+            <td>Defined Term</td>
+            <td>Specifies that the item is a term to be defined</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>dd<span class="tag-indicator">&gt;</span></td>
+            <td>Definition</td>
+            <td>Specifies that text is the definition</td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+
+
+      <h2>List Tags Attributes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>ol<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">reveresed</span> (no value)</td>
+            <td>Reversed numbering (9, 8 , 7, ...)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>ol<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">start</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Specifies start number</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>ol<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">type</span>=<span class="attribute-vali">"type of marker"</span></td>
+            <td>Specifies type of marker: 1, A, a, I, i</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>li<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">start</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Resets start number for from this item</td>
+            <td></td>
+          </tr>
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table>
+    </section>
+
     <section class="html-tags" id="quotes-tags">
       <h1>Quotation Tags (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
       <table>
@@ -640,11 +720,41 @@
         <tfoot>
         </tfoot>
       </table>
+
+      <h2>Quotation Tags Attributes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>q<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">cite</span>=<span class="attribute-vali">"url"</span></td>
+            <td>URL source for the quote</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>blockquote<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">cite</span>=<span class="attribute-vali">"url"</span></td>
+            <td>URL source for the quote</td>
+            <td></td>
+          </tr>
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table>
+
     </section>
 
     <section class="html-tags" id="html-tables">
       <h1>Table Tags (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
       <table>
+        <caption>Table Caption</caption>
         <thead>
           <tr>
             <th>Tag</th>
@@ -658,7 +768,22 @@
             <td class="html-tag"><span class="tag-indicator">&lt;</span>table<span class="tag-indicator">&gt;</span></td>
             <td>Table</td>
             <td>Wrapper element for an HTML table</td>
-            <td rowspan="9">tbody section</td>
+            <td rowspan="12">tbody section</td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>caption<span class="tag-indicator">&gt;</span></td>
+            <td>Table Caption</td>
+            <td>Gives a caption for the table. Must come immediately after <span class="tag-indicator">&lt;</span><span class="html-tag">table</span><span class="tag-indicator">&gt;</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>colgroup<span class="tag-indicator">&gt;</span></td>
+            <td>Group Columns for Formatting</td>
+            <td>Specifies a column or columns for formatting. Allows you to format by column and not cell. Must be child of <span class="tag-indicator">&lt;</span><span class="html-tag">table</span><span class="tag-indicator">&gt;</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>col<span class="tag-indicator">&gt;</span></td>
+            <td>Column</td>
+            <td>Defines each column within a <span class="tag-indicator">&lt;</span>colgroup<span class="tag-indicator">&gt;</span></td>
           </tr>
           <tr>
             <td class="html-tag"><span class="tag-indicator">&lt;</span>thead<span class="tag-indicator">&gt;</span></td>
@@ -710,6 +835,48 @@
           </thead>
           <tbody>
             <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>colgroup<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">span</span>=<span class="attribute-vali">"number"</span></td>
+              <td>Specifies number of columns the element spans</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>col<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">span</span>=<span class="attribute-vali">"number"</span></td>
+              <td>Specifies number of columns the element spans</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>th<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">colspan</span>=<span class="attribute-vali">"number"</span></td>
+              <td>Specifies number of columns to span (default=1)</td>
+              <td><span class="tag-indicator">&lt;</span><span class="tag">td</span> <span class="attribute">colspan</span>=<span class="attribute-val">"2"</span><span class="tag-indicator">&gt;</span>
+            </tr>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>th<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">rowspan</span>=<span class="attribute-vali">"number"</span></td>
+              <td>Specifies number of rows to span (default=1)</td>
+              <td><span class="tag-indicator">&lt;</span><span class="tag">td</span> <span class="attribute">rowspan</span>=<span class="attribute-val">"2"</span><span class="tag-indicator">&gt;</span></td>
+            </tr>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>th<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">scope</span>=<span class="attribute-vali">"scope"</span></td>
+              <td>Specifies what the header is related to: col, colgroup, row, rowgroup</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>th<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">headers</span>=<span class="attribute-vali">"header_id"</span></td>
+              <td>Specifies one or more header cells a row is related to</td>
+              <td>No visual effect. Used by screen readers.</td>
+            </tr>
+            <tr>
+              <td class="html-tag"><span class="tag-indicator">&lt;</span>th<span class="tag-indicator">&gt;</span></td>
+              <td><span class="attribute">abbr</span>=<span class="attribute-vali">"abbreviation"</span></td>
+              <td>Gives a shorter version of the text in the header cell</td>
+              <td>No visual effect. Used by screen readers.</td>
+            </tr>
+            <tr>
               <td class="html-tag"><span class="tag-indicator">&lt;</span>td<span class="tag-indicator">&gt;</span></td>
               <td><span class="attribute">colspan</span>=<span class="attribute-vali">"number"</span></td>
               <td>Specifies number of columns to span (default=1)</td>
@@ -725,10 +892,7 @@
               <td class="html-tag"><span class="tag-indicator">&lt;</span>td<span class="tag-indicator">&gt;</span></td>
               <td><span class="attribute">headers</span>=<span class="attribute-vali">"header_id"</span></td>
               <td>Specifies one or more header cells a row is related to</td>
-              <td class="needs-work">***</td>
-              <!--
-              <td><span class="tag-indicator">&lt;</span><span class="tag">td</span> <span class="attribute">rowspan</span>=<span class="attribute-val">"2"</span><span class="tag-indicator">&gt;</span>
-              -->
+              <td>No visual effect. Used by screen readers.</td>
             </tr>
           </tbody>
           <tfoot>
@@ -748,70 +912,70 @@
           </tr>
         </thead>
         <tbody>
-    <tr>
-      <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
-      <td>Deleted</td>
-      <td>Deleted text</td>
-      <td><del>deleted text</del></td>
-    </tr>
-    <tr>
-      <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
-      <td>Inserted</td>
-      <td>Inserted/added</td>
-      <td><ins>inserted text</ins></td>
-    </tr>
-    <tr>
-      <td class="html-tag"><span class="tag-indicator">&lt;</span>s<span class="tag-indicator">&gt;</span></td>
-      <td>Superseded?</td>
-      <td>Text no longer relevant or incorrect</td>
-      <td><s>No longer relevant</s></td>
-    </tr>
-  </tbody>
-  <tfoot>
-  </tfoot>  
-</table>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
+            <td>Deleted</td>
+            <td>Deleted text</td>
+            <td><del>deleted text</del></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
+            <td>Inserted</td>
+            <td>Inserted/added</td>
+            <td><ins>inserted text</ins></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>s<span class="tag-indicator">&gt;</span></td>
+            <td>Superseded?</td>
+            <td>Text no longer relevant or incorrect</td>
+            <td><s>No longer relevant</s></td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>  
+      </table>
 
-<h2>Content Change Tag Attributes</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Tag</th>
-      <th>Attribute</th>
-      <th>Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
-      <td><span class="attribute">cte</span>=<span class="attribute-vali">"url"</span></td>
-      <td>Gives a url to a document saying why text was deleted</td>
-      <td></span>
-    </tr>
-    <tr>
-      <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
-      <td><span class="attribute">datetime</span>=<span class="attribute-vali">"YYYY-MM-DDThh:mm:ssTZD"</span></td>
-      <td>Gives a datetime for when text was deleted</td>
-      <td></span>
-    </tr>
-    <tr>
-      <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
-      <td><span class="attribute">cte</span>=<span class="attribute-vali">"url"</span></td>
-      <td>Gives a url to a document saying why text was added</td>
-      <td></span>
-    </tr>
-    <tr>
-      <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
-      <td><span class="attribute">datetime</span>=<span class="attribute-vali">"YYYY-MM-DDThh:mm:ssTZD"</span></td>
-      <td>Gives a datetime for when text was added</td>
-      <td></span>
-    </tr>
-  </tbody>
-  <tfoot>
-  </tfoot>  
-</table>
+      <h2>Content Change Tag Attributes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">cte</span>=<span class="attribute-vali">"url"</span></td>
+            <td>Gives a url to a document saying why text was deleted</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>del<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">datetime</span>=<span class="attribute-vali">"YYYY-MM-DDThh:mm:ssTZD"</span></td>
+            <td>Gives a datetime for when text was deleted</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">cte</span>=<span class="attribute-vali">"url"</span></td>
+            <td>Gives a url to a document saying why text was added</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>ins<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">datetime</span>=<span class="attribute-vali">"YYYY-MM-DDThh:mm:ssTZD"</span></td>
+            <td>Gives a datetime for when text was added</td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>  
+      </table>
 
-</section>
+    </section>
 
 
   
@@ -842,7 +1006,6 @@
       <table>
         <thead>
           <tr>
-            <th>Type</th>
             <th>Option</th>
             <th>Description</th>
             <th>Example</th>
@@ -851,14 +1014,12 @@
         </thead>
         <tbody>
           <tr>
-            <td>attribute</td>
             <td><span class="attribute">href</span>=<span class="attribute-vali">"url"</span></td>
             <td>Defines a link to "url" (site or local file)</td>
             <td><span class="tag-indicator">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>=<span class="attribute-val">"http://www.google.com"</span><span class="tag-indicator">&gt;</span>Google<span class="tag-indicator">&lt;</span><span class="tag">/a</span><span class="tag-indicator">&gt;</span></td>
             <td><a href="http://www.google.com">Google</a></td>
           </tr>
           <tr id="target">
-            <td>attribute</td>
             <td class="attribute">target</td>
             <td>Indicates where the target page should be opened</td>
             <td><span class="tag-indicator">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>=<span class="attribute-val">"http://www.google.com"</span>
@@ -866,7 +1027,6 @@
             <td><a href="http://www.google.com" target="_blank">Google</a></td>
           </tr>
           <tr>
-            <td>attribute value</td>
             <td><span class="attribute">target</span>=<span class="attribute-val">"_blank"</span></td>
             <td>Opens in new tab</td>
             <td><span class="tag-indicator">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>=<span class="attribute-val">"http://www.google.com"</span>
@@ -874,7 +1034,6 @@
             <td><a href="http://www.google.com" target="_blank">Google</a></td>
           </tr>
           <tr>
-            <td>attribute value</td>
             <td><span class="attribute">target</span>=<span class="attribute-val">"_self"</span></td>
             <td>Opens in same frame as where clicked (default)</td>
             <td><span class="tag-indicator">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>=<span class="attribute-val">"http://www.google.com"</span>
@@ -882,7 +1041,6 @@
             <td><a href="http://www.google.com" target="_self">Google</a></td>
           </tr>
           <tr>
-            <td>attribute value</td>
             <td><span class="attribute">target</span>=<span class="attribute-val">"_parent"</span></td>
             <td>Opens in parent frame</td>
             <td><span class="tag-indicator">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>=<span class="attribute-val">"http://www.google.com"</span>
@@ -890,7 +1048,6 @@
             <td><a href="http://www.google.com" target="_parent">Google</a></td>
           </tr>
           <tr>
-            <td>attribute value</td>
             <td><span class="attribute">target</span>=<span class="attribute-val">"_top"</span></td>
             <td>Opens in full body of the window</td>
             <td><span class="tag-indicator">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>=<span class="attribute-val">"http://www.google.com"</span>
@@ -898,7 +1055,6 @@
             <td><a href="http://www.google.com" target="_top">Google</a></td>
           </tr>
           <tr>
-            <td class="learn-me">attribute value</td>
             <td><span class="attribute">target</span>=<span class="attribute-vali">"framename"</span></td>
             <td>Opens in the named iframe</td>
             <td></td>
@@ -910,21 +1066,18 @@
             -->
           </tr>
           <tr>
-            <td class="learn-me">attribute</td>
             <td><span class="attribute">type</span>=<span class="attribute-vali">"media_type"</span></td>
             <td>Specifies the media type of the linked document</td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td class="learn-me">attribute</td>
             <td><span class="attribute">media</span>=<span class="attribute-vali">"media_query"</span></td>
             <td>Specifies what media/device the linked document is optimized for</td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>attribute</td>
             <td><span class="attribute">download, hreflang, ping, referrerpolicy, rel</span></td>
             <td>See <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">W3 Schools</a> for these attributes </td>
             <td></td>
@@ -934,6 +1087,219 @@
         <tfoot>
         </tfoot>
       </table>
+    </section>
+
+    <section class="html-tags" id="html-datatags">
+      <h1>Data Objects Tags (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Sample</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>meter<span class="tag-indicator">&gt;</span></td>
+            <td>Meter (gauge)</td>
+            <td>Defines a gauge</td>
+            <td><label for="my_meter">My Meter</label> <meter id="my_meter" value="2" min="0" max="10" low="3"></meter></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>progress<span class="tag-indicator">&gt;</span></td>
+            <td>Progress Bar</td>
+            <td>Shows progress. Should be used in conjunction with JavaScript to show progress.</td>
+            <td><label for="my_progbar">My Progress Bar</label> <progress id="my_progbar" value="2" max="10"></progress></td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>  
+      </table>
+
+      <h2>Data Objects Tags Attributes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>meter<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">value</span>=<span class="attribute-vali">"number"</span> (required)</td>
+            <td>Gives the current value of the gauge</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>meter<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">min</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Min value of the gauge. Default = 0.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>meter<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">max</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Max value of the gauge.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>meter<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">low</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Gives the range considered to be a low value.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>meter<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">high</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Gives the range considered to be a high value.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>meter<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">optimum</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Gives the value considered to be a optimal value.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>meter<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">form</span>=<span class="attribute-vali">"form_id"</span></td>
+            <td>Specifies which form the <span class="tag-indicator">&lt;</span><span class="html-tag">meter</span><span class="tag-indicator">&gt;</span> element belongs to</td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>  
+      </table>
+
+    </section>
+
+    <section class="html-tags" id="html-imagetags">
+      <h1>Images Tags (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Sample</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="figure-tag">
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td>Image</td>
+            <td>Used to embed an image. Really just a holding place for a referenced image.</td>
+            <td><img src="./resources/images/donuts.jpg" alt="Donuts" width="200" height="135"></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>figure<span class="tag-indicator">&gt;</span></td>
+            <td>Figure</td>
+            <td>Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
+            <td rowspan="2"><figure><img src="./resources/images/donuts.jpg" alt="Donuts" width="200" height="135"><figcaption>Fig.1 - Donuts</figcaption></figure></td>
+          </tr>
+          <tr class="figure-tag">
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>figcaption<span class="tag-indicator">&gt;</span></td>
+            <td>Figure Caption</td>
+            <td>defines a caption for a <span class="tag-indicator">&lt;</span><span class="html-tag">figure</span><span class="tag-indicator">&gt;</span> element. The <span class="tag-indicator">&lt;</span><span class="html-tag">figcaption</span><span class="tag-indicator">&gt;</span> element can be placed as the first or as the last child of a <span class="tag-indicator">&lt;</span><span class="html-tag">figure</span><span class="tag-indicator">&gt;</span> element</td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>  
+      </table>
+
+      <h2>Images Tags Attributes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">src</span>=<span class="attribute-vali">"url"</span> (required)</td>
+            <td>Path to the image</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">alt</span>=<span class="attribute-vali">"text"</span> (required)</td>
+            <td>Alternate text</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">width</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Width. Not required, but should be used.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">height</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Height. Not required, but should be used.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">srcset</span>=<span class="attribute-vali">"url-list"</span></td>
+            <td>Gives a URL to a detailed description of the image.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">longdesc</span>=<span class="attribute-vali">"url"</span></td>
+            <td>Specifies a list of images to use in different situations</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">sizes</span>=<span class="attribute-vali">"sizes"</span></td>
+            <td>Specifies sizes to use for different page layouts</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">ismap</span></td>
+            <td>Specifies an image as a server-side image map</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">usemap</span>=<span class="attribute-vali">"#mapname"</span></td>
+            <td>Specifies an image as a client-side image map</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">loading</span>=<span class="attribute-val">"eager/lazy"</span></td>
+            <td>Should image load immediately or until some conditions are met.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">referrerpolicy</span>=<span class="attributei-val">"value"</span></td>
+            <td>Specifies a referrer policy when fetching an image.</td>
+            <td>See <a href="https://www.w3schools.com/tags/att_img_referrepolicy.asp" target="_blank">W3 Schools</a> for attributes & values</td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>img<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">crossorigin</span>=<span class="attribute-val">"anonymous/use-credentials"</span></td>
+            <td>Allows images from third party sites that allow cross-origin access to be used with canvas.</td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>  
+      </table>
+
     </section>
 
     <section class="html-tags" id="other-tags">

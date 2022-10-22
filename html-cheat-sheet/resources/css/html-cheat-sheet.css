@@ -38,6 +38,11 @@ th {
   background-color: #808080;
 }
 
+td {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 section {
   margin-top: 50px;
 }
