@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My CheatSheet</title>
+  <title>My HTML Reference</title>
   <link rel="stylesheet" type="text/css" href="./resources/css/html-cheat-sheet.css">
 </head>
 <body>
   <header>
-    <h1>My HTML/CSS Cheat Sheet</h1>
+    <h1>My HTML Reference</h1>
   </header>
   
   <main>
@@ -1101,6 +1101,12 @@
             <td>Shows progress. Should be used in conjunction with JavaScript to show progress.</td>
             <td><label for="my_progbar">My Progress Bar</label> <progress id="my_progbar" value="2" max="10"></progress></td>
           </tr>
+          <tr>
+            <td><span class="tag-indicator">&lt;</span><span class="html-tag" id="label-tag">label</span><span class="tag-indicator">&gt;</span></td>
+            <td>Label</td>
+            <td>Defines a label for the element</td>
+            <td></td>
+          </tr>
         </tbody>
         <tfoot>
         </tfoot>  
@@ -1157,6 +1163,18 @@
             <td class="html-tag"><span class="tag-indicator">&lt;</span>meter<span class="tag-indicator">&gt;</span></td>
             <td><span class="attribute">form</span>=<span class="attribute-vali">"form_id"</span></td>
             <td>Specifies which form the <span class="tag-indicator">&lt;</span><span class="html-tag">meter</span><span class="tag-indicator">&gt;</span> element belongs to</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>label<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">for</span>=<span class="attribute-vali">"element_id"</span></td>
+            <td>Specifies which element the <span class="tag-indicator">&lt;</span><span class="html-tag">label</span><span class="tag-indicator">&gt;</span> belongs to</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>label<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">form</span>=<span class="attribute-vali">"form_id"</span></td>
+            <td>Specifies which form the <span class="tag-indicator">&lt;</span><span class="html-tag">label</span><span class="tag-indicator">&gt;</span> element belongs to</td>
             <td></td>
           </tr>
         </tbody>
@@ -1583,7 +1601,7 @@
     </section>
 
     <section class="html-tags" id="html-form">
-      <h1>Forms (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
+      <h1><span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> (in <span class="tag-indicator">&lt;</span><span class="html-tag">body</span><span class="tag-indicator">&gt;</span>)</h1>
       <table>
         <thead>
           <tr>
@@ -1617,7 +1635,7 @@
         </tfoot>  
       </table>
 
-      <h2>Form Attributes</h2>
+      <h2><span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> Attributes</h2>
       <table>
         <thead>
           <tr>
@@ -1717,7 +1735,7 @@
         </tfoot>  
       </table>
 
-      <h1>Input Element (in <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span>)</h1>
+      <h1><span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> Element (in <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span>)</h1>
       <table>
         <thead>
           <tr>
@@ -1739,7 +1757,7 @@
         </tfoot>  
       </table>      
 
-      <h2>Input <span class="attribute">type</span> attribute values </h2>
+      <h2><span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> <span class="attribute">type</span> attribute values </h2>
       <table>
         <thead>
           <tr>
@@ -1928,7 +1946,7 @@
         </tfoot>  
       </table>      
 
-      <h2>Input Attributes (other than <span class="attribute">type</span>)</h2>
+      <h2><span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> Attributes (other than <span class="attribute">type</span>)</h2>
       <table>
         <thead>
           <tr>
@@ -1941,9 +1959,188 @@
         <tbody>
           <tr>
             <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">name</span>=<span class="attribute-vali">"text"</span></td>
+            <td>Provides the name for the <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span>.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">form</span>=<span class="attribute-vali">"form_id"</span></td>
+            <td>For an <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> outside of the <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element, identifies the object with the <span class="attribute-vali">"form_id"</span>.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">value</span>=<span class="attribute-vali">"text"</span></td>
+            <td>
+              For
+              <span class="attribute">type</span>=<span class="attribute-vali">"text"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"password"</span>,
+              <span class="attribute">type</span>=<span class="attribute-vali">"hidden"</span>
+              defines the default value. <br>
+              For 
+              <span class="attribute">type</span>=<span class="attribute-vali">"checkbox"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"radio"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"image"</span>
+              defines the value associated with the input. <br>
+              For 
+              <span class="attribute">type</span>=<span class="attribute-vali">"button"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"reset"</span>,
+              <span class="attribute">type</span>=<span class="attribute-vali">"submit"</span>
+              defines the text on the button.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
             <td><span class="attribute-val">autofocus</span></td>
             <td>Specifies that an <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> should get focus when page loads.</td>
             <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">checked</span></td>
+            <td>Specifies that an <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> should be selected when page loads.</td>
+            <td><span class="attribute">type</span>=<span class="attribute-vali">"checkbox"</span>, <span class="attribute">type</span>=<span class="attribute-vali">"radio"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">required</span></td>
+            <td>Specifies that an <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> is required.</td>
+            <td>
+              <span class="attribute">type</span>=<span class="attribute-vali">"text"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"search"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"url"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"tel"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"email"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"password"</span>,
+              <span class="attribute">type</span>=<span class="attribute-vali">"number"</span>,
+              <span class="attribute">type</span>=<span class="attribute-vali">"checkbox"</span>, and date pickers
+            </td>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">disabled</span></td>
+            <td>Specifies that an <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> should be disabled when page loads. Typically, some JavaScript will enable it when a condition is met (like a checkbox is checked).
+              A form will submit something that is <span class="attribute-val">readonly</span>, but not something that is <span class="attribute-val">disabled</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">readonly</span></td>
+            <td>Specifies that an <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> should be read only when page loads. Typically, some JavaScript will enable it when a condition is met (like a checkbox is checked).</td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">max</span>=<span class="attribute-vali">"number</span><span class="attribute-val">|</span><span class="attribute-vali">date"</span></td>
+            <td>Specifies a minimum value for an <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> </td>
+            <td>
+              <span class="attribute">type</span>=<span class="attribute-vali">"number"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"range"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"date"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"datetime-local</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"month"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"time"</span>,
+              <span class="attribute">type</span>=<span class="attribute-vali">"week</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">max</span>=<span class="attribute-vali">"number</span><span class="attribute-val">|</span><span class="attribute-vali">date"</span></td>
+            <td>Specifies a maximum value for an <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> </td>
+            <td>
+              <span class="attribute">type</span>=<span class="attribute-vali">"number"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"range"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"date"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"datetime-local</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"month"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"time"</span>,
+              <span class="attribute">type</span>=<span class="attribute-vali">"week</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">step</span>=<span class="attribute-vali">"number</span><span class="attribute-val">|any"</span></td>
+            <td>Specifies the step interval and the set of "legal" values in a <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> </td>
+            <td>
+              <span class="attribute">type</span>=<span class="attribute-vali">"number"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"range"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"date"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"datetime-local</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"month"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"time"</span>,
+              <span class="attribute">type</span>=<span class="attribute-vali">"week</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">minlength</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Specifies a minimum number of characters for an <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> </td>
+            <td>
+              <span class="attribute">type</span>=<span class="attribute-vali">"text"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"search"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"url"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"tel"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"email"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"password"</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">maxlength</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Specifies a maximum number of characters for an <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> </td>
+            <td>
+              <span class="attribute">type</span>=<span class="attribute-vali">"text"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"search"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"url"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"tel"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"email"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"password"</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">size</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Specifies the visible width for a <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> </td>
+            <td>
+              <span class="attribute">type</span>=<span class="attribute-vali">"text"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"search"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"url"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"tel"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"email"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"password"</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">placeholder</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Specifies a short hint that describes the expected value.</td>
+            <td>
+              <span class="attribute">type</span>=<span class="attribute-vali">"text"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"search"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"url"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"tel"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"email"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"password"</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">pattern</span>=<span class="attribute-vali">"regexp"</span></td>
+            <td>Specifies a regular expression to use to validate text entry. </td>
+            <td>Use a global <span class="attribute">title</span> attribute to describe the pattern to the user. See <a href="https://www.w3schools.com/tags/att_input_pattern.asp" target="_blank">W3 Schools</a> for more on how to use this.</td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">list</span>=<span class="attribute-vali">"datalist_id"</span></td>
+            <td>Refers to a <span class="tag-indicator">&lt;</span><span class="html-tag">datalist</span><span class="tag-indicator">&gt;</span> that contains pre-defined values for the <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span></td>
+            <td>
+              <span class="attribute">type</span>=<span class="attribute-vali">"text"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"search"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"url"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"tel"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"email"</span>, 
+              <span class="attribute">type</span>=<span class="attribute-vali">"password"</span>
+            </td>
           </tr>
           <tr>
             <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
@@ -1953,8 +2150,32 @@
           </tr>
           <tr>
             <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">multiple</span></td>
+            <td>Allows user to make more than one entry</td>
+            <td><span class="attribute">type</span>=<span class="attribute-vali">"email"</span>, <span class="attribute">type</span>=<span class="attribute-vali">"file"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">src</span>=<span class="attribute-vali">"url"</span></td>
+            <td>The URL for the image</td>
+            <td><span class="attribute">type</span>=<span class="attribute-vali">"image"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
             <td><span class="attribute">alt</span>=<span class="attribute-vali">"text"</span></td>
             <td>Alternate text for image</td>
+            <td><span class="attribute">type</span>=<span class="attribute-vali">"image"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">width</span>=<span class="attribute-vali">"value"</span></td>
+            <td>Width of the element</td>
+            <td><span class="attribute">type</span>=<span class="attribute-vali">"image"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">height</span>=<span class="attribute-vali">"value"</span></td>
+            <td>Height of the element</td>
             <td><span class="attribute">type</span>=<span class="attribute-vali">"image"</span></td>
           </tr>
           <tr>
@@ -1963,11 +2184,319 @@
             <td>A filer for what types of file can be selected. See <a href="https://www.w3schools.com/tags/att_input_accept.asp" target="_blank">W3 schools</a> for values.</td>
             <td><span class="attribute">type</span>=<span class="attribute-vali">"file"</span></td>
           </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">dirname</span>=<span class="attribute-vali">"name</span><span class="attribute-val">.dir"</span></td>
+            <td>Enables the text input direction of the <span class="attribute-vali">"name"</span> item to be submitted with the form </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">formaction</span>=<span class="attribute-vali">"url"</span></td>
+            <td>Specifies the URL that will process the input when the form is submitted. Overrides the <span class="attribute">action</span> in the <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element </td>
+            <td><span class="attribute">type</span>=<span class="attribute-vali">"submit"</span>, <span class="attribute">type</span>=<span class="attribute-vali">"image"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">formmethod</span>=<span class="attribute-val">"get|post"</span></td>
+            <td>Overrides the <span class="attribute">method</span> in the <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element </td>
+            <td><span class="attribute">type</span>=<span class="attribute-vali">"submit"</span>, <span class="attribute">type</span>=<span class="attribute-vali">"image"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">formtarget</span>=<span class="attribute-vali">"value"</span></td>
+            <td>Overrides the <span class="attribute">target</span> in the <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element </td>
+            <td><span class="attribute">type</span>=<span class="attribute-vali">"submit"</span>, <span class="attribute">type</span>=<span class="attribute-vali">"image"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">formnovalidate</span></td>
+            <td>Overrides the <span class="attribute-val">novalidate</span> in the <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element </td>
+            <td><span class="attribute">type</span>=<span class="attribute-vali">"submit"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">formenctype</span>=<span class="attribute-vali">"value"</span></td>
+            <td>Overrides the <span class="attribute">enctype</span> in the <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element </td>
+            <td><span class="attribute">type</span>=<span class="attribute-vali">"submit"</span>, <span class="attribute">type</span>=<span class="attribute-vali">"image"</span></td>
+          </tr>
       </tbody>
         <tfoot>
         </tfoot>  
       </table>
-    
+
+      <p class = 'additional-text'>Also see <a href="#label-tag"><span class="tag-indicator">&lt;</span><span class="html-tag">label</span><span class="tag-indicator">&gt;</span></a>,
+        which can apply to <br>
+        <span class="attribute">type</span>=<span class="attribute-vali">"checkbox"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"color"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"date"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"datetime-local"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"email"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"file"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"month</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"number"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"password"</span>
+        <span class="attribute">type</span>=<span class="attribute-vali">"radio"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"range"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"search"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"tel"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"text"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"time"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"url"</span>, 
+        <span class="attribute">type</span>=<span class="attribute-vali">"week"</span>
+        <br> and  
+        <span class="tag-indicator">&lt;</span><span class="html-tag">select</span><span class="tag-indicator">&gt;</span>, 
+        <span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span>
+      </p>
+      
+      <h1><span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span> Element (in <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span>)</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Sample</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td>Text Area</td>
+            <td>Defines a multi-line text control</td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>  
+      </table>      
+
+
+      <h2><span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span> Attributes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">form</span>=<span class="attribute-vali">"form_id"</span></td>
+            <td>Specifies which form the <span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span> element belongs to</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">name</span>=<span class="attribute-vali">"text"</span></td>
+            <td>Provides the name for the <span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span>.</td>
+            <td>Required for the data to be sent with the form</td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">rows</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Specifies the number of visible lines in the <span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">cols</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Specifies the number of visible width of the <span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">wrap</span>=<span class="attribute-val">"hard|soft"</span></td>
+            <td>Specifies how the text is to be wrapped when submitted in a form.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">maxlength</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Specifies a maximum number of characters for an <span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span> </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">placeholder</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Specifies a short hint that describes the expected value.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">autofocus</span></td>
+            <td>Specifies that the <span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span> should get focus when page loads.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">required</span></td>
+            <td>Specifies that an <span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span> is required.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">disabled</span></td>
+            <td>Specifies that an <span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span> should be disabled when page loads. Typically, some JavaScript will enable it when a condition is met (like a checkbox is checked).</td>
+            <td rowspan="2">A form will submit something that is <span class="attribute-val">readonly</span>, but not something that is <span class="attribute-val">disabled</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">readonly</span></td>
+            <td>Specifies that an <span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span> should be read only when page loads. Typically, some JavaScript will enable it when a condition is met (like a checkbox is checked).</td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>textarea<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">dirname</span>=<span class="attribute-vali">"textareaname</span><span class="attribute-val">.dir"</span></td>
+            <td>Enables the text input direction of the <span class="attribute-vali">"textareaname"</span> item to be submitted with the form </td>
+            <td></td>
+          </tr>
+      </tbody>
+        <tfoot>
+        </tfoot>  
+      </table>
+
+      <p class = 'additional-text'>The <span class="attribute">id</span> attribute is needed to associate the element with the label. </p>
+      
+      
+      <h1><span class="tag-indicator">&lt;</span><span class="html-tag">button</span><span class="tag-indicator">&gt;</span> Element (in <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span>)</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Sample</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td>Button</td>
+            <td>Defines a button control</td>
+            <td><button type="button">Click Me!</button></td>
+          </tr>
+          <tr>
+            <td colspan="4">Inside a <span class="tag-indicator">&lt;</span><span class="html-tag">button</span><span class="tag-indicator">&gt;</span>, 
+              you can put text and tags like 
+              <span class="tag-indicator">&lt;</span><span class="html-tag">i</span><span class="tag-indicator">&gt;</span>,
+              <span class="tag-indicator">&lt;</span><span class="html-tag">b</span><span class="tag-indicator">&gt;</span>,
+              <span class="tag-indicator">&lt;</span><span class="html-tag">strong</span><span class="tag-indicator">&gt;</span>,
+              <span class="tag-indicator">&lt;</span><span class="html-tag">br</span><span class="tag-indicator">&gt;</span>,
+              <span class="tag-indicator">&lt;</span><span class="html-tag">img</span><span class="tag-indicator">&gt;</span>, 
+              which you can't do in an <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>  
+      </table>      
+
+
+      <h2><span class="tag-indicator">&lt;</span><span class="html-tag">button</span><span class="tag-indicator">&gt;</span> Attributes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">form</span>=<span class="attribute-vali">"form_id"</span></td>
+            <td>Specifies which form the <span class="tag-indicator">&lt;</span><span class="html-tag">button</span><span class="tag-indicator">&gt;</span> element belongs to</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">name</span>=<span class="attribute-vali">"text"</span></td>
+            <td>Provides the name for the <span class="tag-indicator">&lt;</span><span class="html-tag">button</span><span class="tag-indicator">&gt;</span>.</td>
+            <td>Required for the data to be sent with the form</td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">type</span>=<span class="attribute-val">"button|reset|submit"</span></td>
+            <td>Specifies the type of the <span class="tag-indicator">&lt;</span><span class="html-tag">button</span><span class="tag-indicator">&gt;</span></td>
+            <td>Always specify the <span class="attribute">type</span> to tell the browser what kind of button it is.</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">type</span>=<span class="attribute-val">"button"</span></td>
+            <td>A clickable button</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">type</span>=<span class="attribute-val">"reset"</span></td>
+            <td>Resets the form to the initial values</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">type</span>=<span class="attribute-val">"submit"</span></td>
+            <td>Submits form-data</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">value</span>=<span class="attribute-vali">"text"</span></td>
+            <td>Specifies the initial value for the <span class="tag-indicator">&lt;</span><span class="html-tag">button</span><span class="tag-indicator">&gt;</span></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">autofocus</span></td>
+            <td>Specifies that the <span class="tag-indicator">&lt;</span><span class="html-tag">button</span><span class="tag-indicator">&gt;</span> should get focus when page loads.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">disabled</span></td>
+            <td>Specifies that an <span class="tag-indicator">&lt;</span><span class="html-tag">button</span><span class="tag-indicator">&gt;</span> should be disabled when page loads. Typically, some JavaScript will enable it when a condition is met (like a checkbox is checked).</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">formaction</span>=<span class="attribute-vali">"url"</span></td>
+            <td>Specifies the URL that will process the the form when submitted. Overrides the <span class="attribute">action</span> in the <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element </td>
+            <td>Only for <span class="attribute">type</span>=<span class="attribute-vali">"submit"</span>, <span class="attribute">type</span>=<span class="attribute-vali">"image"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">formmethod</span>=<span class="attribute-val">"get|post"</span></td>
+            <td>Overrides the <span class="attribute">method</span> in the <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element </td>
+            <td>Only for <span class="attribute">type</span>=<span class="attribute-vali">"submit"</span>, <span class="attribute">type</span>=<span class="attribute-vali">"image"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">formtarget</span>=<span class="attribute-vali">"value"</span></td>
+            <td>Overrides the <span class="attribute">target</span> in the <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element </td>
+            <td>Only for <span class="attribute">type</span>=<span class="attribute-vali">"submit"</span>, <span class="attribute">type</span>=<span class="attribute-vali">"image"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute-val">formnovalidate</span></td>
+            <td>Overrides the <span class="attribute-val">novalidate</span> in the <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element </td>
+            <td>Only for <span class="attribute">type</span>=<span class="attribute-vali">"submit"</span></td>
+          </tr>
+          <tr>
+            <td class="html-tag"><span class="tag-indicator">&lt;</span>button<span class="tag-indicator">&gt;</span></td>
+            <td><span class="attribute">formenctype</span>=<span class="attribute-vali">"value"</span></td>
+            <td>Overrides the <span class="attribute">enctype</span> in the <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element </td>
+            <td>Only for <span class="attribute">type</span>=<span class="attribute-vali">"submit"</span>, <span class="attribute">type</span>=<span class="attribute-vali">"image"</span></td>
+          </tr>
+
+      </tbody>
+        <tfoot>
+        </tfoot>  
+      </table>
+
     </section>
 
   </main>
