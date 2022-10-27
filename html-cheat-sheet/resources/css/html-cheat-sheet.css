@@ -43,10 +43,6 @@ td {
   padding-right: 4px;
 }
 
-section {
-  margin-top: 50px;
-}
-
 #tfoot-section {
   text-align: right;
 }
@@ -58,6 +54,15 @@ section {
 }
 
 section {
+  border-color: white;
+  border: 1px solid;
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.forms-section {
   border-color: white;
   border: 1px solid;
   padding-left: 20px;
