@@ -2075,7 +2075,7 @@
             </tr>
             <tr>
               <td class="html-tag"><span class="tag-indicator">&lt;</span>input<span class="tag-indicator">&gt;</span></td>
-              <td><span class="attribute">placeholder</span>=<span class="attribute-vali">"number"</span></td>
+              <td><span class="attribute">placeholder</span>=<span class="attribute-vali">"text"</span></td>
               <td>Specifies a short hint that describes the expected value.</td>
               <td>
                 <span class="attribute">type</span>=<span class="attribute-vali">"text"</span>, 
@@ -3033,8 +3033,406 @@
         <tfoot>
         </tfoot>  
       </table>
-
     </section>
+
+    <section class="html-tags" id="html-imagetags">
+      <h1>Global Attributes</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Notes</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="attribute">id</span>=<span class="attribute-vali">"id"</span></td>
+            <td>Gives the element an id</td>
+            <td>Must be unique in the document. Used by CSS/JavaScript.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="attribute">title</span>=<span class="attribute-vali">"text"</span></td>
+            <td>Gives the element a title</td>
+            <td>Most often rendered as a tool tip.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="attribute">class</span>=<span class="attribute-vali">"classname"</span></td>
+            <td>Defines class or a list of space-delimited classes, typically for CSS but also for JavaScript</td>
+            <td>Must begin with a letter, but can include numbers, hyphens and underscores</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="attribute">style</span>=<span class="attribute-vali">"style_definitions"</span></td>
+            <td>Specifies an inline style for the element.</td>
+            <td>will override any style set globally, in a style sheet, or in a <span class="tag-indicator">&lt;</span><span class="html-tag">style</span><span class="tag-indicator">&gt;</span> tag</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="attribute">lang</span>=<span class="attribute-vali">"language_code"</span></td>
+            <td>Specifies the language code of the content</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="attribute">translate</span>=<span class="attribute-val">"yes|no"</span></td>
+            <td>Specifies whether or not the content can be translated.</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="attribute">spellcheck</span>=<span class="attribute-val">"true|false"</span></td>
+            <td>Specifies that the element should have its content grammar and spell-checked</td>
+            <td>
+              Works for text values in <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> elements, 
+              <span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span>, 
+              editable elements.
+            </td>
+            <td><input type="text" placeholder="try me out"></td>
+          </tr>
+          <tr>
+            <td><span class="attribute">tabindex</span>=<span class="attribute-vali">"number"</span></td>
+            <td>Specifies the tab order of the element</td>
+            <td>1 is first</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="attribute-val">hidden</span></td>
+            <td>Specifies that the element is not yet, or is no longer, relevant.</td>
+            <td>Likely pared with JavaScript to show/hide the content.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><span class="attribute">accesskey</span>=<span class="attribute-vali">"character"</span></td>
+            <td>Defines a shortcut key which will activate/focus an element</td>
+            <td>Most browsers require an <kbd>alt</kbd> key to activate the shortcut</td>
+            <td><label for="alt-m">Try <kbd>alt-m</kbd></label><input id="alt-m" accesskey="m" type="text"></td>
+          </tr>
+          <tr>
+            <td><span class="attribute">contenteditable</span>=<span class="attribute-val">"true|false"</span></td>
+            <td>Specifies whether or not the content is editable.</td>
+            <td>Without it, the element inherits the value from its parent.</td>
+            <td><p contenteditable="true">An editable paragraph</p></td>
+          </tr>
+          <tr>
+            <td><span class="attribute">data-*</span>=<span class="attribute-vali">"somevalue"</span></td>
+            <td>Store custom data private to the page.</td>
+            <td>Used by javascript to make the page interactive.</td>
+            <td>See <a href="https://www.w3schools.com/tags/att_global_data.asp" target="_blank">W3 Schools</a> for more info.</p></td>
+          </tr>
+          <tr>
+            <td><span class="attribute">dir</span>=<span class="attribute-val">"ltr|rtl|auto"</span></td>
+            <td>Defines the text direction of the content.</td>
+            <td></td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td><span class="attribute">draggable</span>=<span class="attribute-val">"true|false|auto"</span></td>
+            <td>Specifies if an element is draggable.</td>
+            <td>Often used in drag-and-drop. See <a href="https://www.w3schools.com/html/html5_draganddrop.asp">W3 Schools</a> for a drag-and-drop tutorial.</td>
+            <td><p class="drag-me" draggable="true">Drag Me</p></td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>  
+      </table>
+    </section>
+
+    <section class="html-tags" id="html-imagetags">
+      <h1>Event Attributes</h1>
+
+      <section class="event-category">
+      <h1>Window Events</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Description</th>
+              <th>Chrome|Edge|Firefox|Safari|Opera</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="attribute">onafterprint</span></td>
+              <td>Fires when a page has started printing</td>
+              <td class="compatibility-string not-fully-compatible">Y|Y|Y|N|N</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onbeforeprint</span></td>
+              <td>Fires before the print dialog appears</td>
+              <td class="compatibility-string not-fully-compatible">Y|Y|Y|N|N</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onbeforeunload</span></td>
+              <td>Fires when the document is about to be unloaded (maybe an "are you sure" window?)</td>
+              <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onerror</span></td>
+              <td>Fires when an error occurs loading an external file (like an image)</td>
+              <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onhashchange</span></td>
+              <td>Fires when changes have been made to the anchor part of a URL</td>
+              <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onload</span></td>
+              <td>Fires when an object has been loaded. Doesn't fire when loaded from cache. Often used to identify the browser and load the proper page for the browser.</td>
+              <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onmessage</span></td>
+              <td>Fires when the message is triggered</td>
+              <td class="compatibility-string not-fully-compatible">???</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onoffline</span></td>
+              <td>Fires when the browser starts to work offline</td>
+              <td class="compatibility-string not-fully-compatible">N|N|Y|N|N</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">ononline</span></td>
+              <td>Fires when the browser starts to work online</td>
+              <td class="compatibility-string not-fully-compatible">N|N|Y|N|N</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onpagehide</span></td>
+              <td>Fires when the message is triggered</td>
+              <td class="compatibility-string not-fully-compatible">???</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onpageshow</span></td>
+              <td>Fires when user nagivates to a web page. Fires after the onload event. Fires every time the page is loaded.</td>
+              <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onpopstate</span></td>
+              <td>Fires the window's history changes</td>
+              <td class="compatibility-string not-fully-compatible">???</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onresize</span></td>
+              <td>Fires when the page is resized</td>
+              <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onstorage</span></td>
+              <td>Fires when a Web Storage area is updated</td>
+              <td class="compatibility-string not-fully-compatible">???</td>
+            </tr>
+            <tr>
+              <td><span class="attribute">onunload</span></td>
+              <td>Fires once a page has been unloaded, or a window has been closed. Also triggered when you reload a page.</td>
+              <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+            </tr>
+          </tbody>
+          <tfoot>
+          </tfoot>  
+        </table>
+      </section>
+
+      <section class="event-category">
+        <h1>Form Events</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Attribute</th>
+                <th>Description</th>
+                <th>Chrome|Edge|Firefox|Safari|Opera</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="attribute">onblur</span></td>
+                <td>Fires the moment an element loses focus. Typically used for validation functions.</td>
+                <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+              </tr>
+              <tr>
+                <td><span class="attribute">onchange</span></td>
+                <td>
+                  Fires when the value of an element has changed. Similar to <span class="attribute">oninput</span>, 
+                  except: <span class="attribute">oninput</span> fires immediately after the change and 
+                  <span class="attribute">onchange</span> fires when the element loses focus;
+                  also <span class="attribute">onchange</span> works on <span class="tag-indicator">&lt;</span><span class="html-tag">select</span><span class="tag-indicator">&gt;</span> elements.
+                </td>
+                <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+              </tr>
+              <tr>
+                <td><span class="attribute">oncontextmenu</span></td>
+                <td>Fires when a user right-clicks on an element to open a context menu.</td>
+                <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+              </tr>
+              <tr>
+                <td><span class="attribute">onfocus</span></td>
+                <td>Fires when an element gets focus</td>
+                <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+              </tr>
+              <tr>
+                <td><span class="attribute">oninput</span></td>
+                <td>
+                  Fires when the value of an <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span> 
+                  or <span class="tag-indicator">&lt;</span><span class="html-tag">textarea</span><span class="tag-indicator">&gt;</span> is changed.
+                </td>
+                <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+              </tr>
+              <tr>
+                <td><span class="attribute">oninvalid</span></td>
+                <td>
+                  Fires when a submittable <span class="tag-indicator">&lt;</span><span class="html-tag">select</span><span class="tag-indicator">&gt;</span> element is invalid,
+                  like a required field is empty.
+                </td>
+                <td class="compatibility-string not-fully-compatible">Y|Y|Y|N|Y</td>
+              </tr>
+              <tr>
+                <td><span class="attribute">onreset</span></td>
+                <td>
+                  Fires when the Reset button in a form is clicked. 
+                  Makes the most sense when used in a <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element.
+                </td>
+                <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+              </tr>
+              <tr>
+                <td><span class="attribute">onsearch</span></td>
+                <td>
+                  Fires when the user presses the <kbd>enter</kbd> key or clicks the "x" button in an 
+                  <span class="tag-indicator">&lt;</span><span class="html-tag">input</span><span class="tag-indicator">&gt;</span>
+                  with <span class="attribute">type</span>=<span class="attribute-vali">"search"</span></td>
+                </td>
+                <td class="compatibility-string not-fully-compatible">Y|N|N|Y|Y</td>
+              </tr>
+              <tr>
+                <td><span class="attribute">onselect</span></td>
+                <td>Fires when some text has been selected in an element.</td>
+                <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+              </tr>
+              <tr>
+                <td><span class="attribute">onsubmit</span></td>
+                <td>
+                  Fires when a form is submitted. 
+                  Makes the most sense when used in a <span class="tag-indicator">&lt;</span><span class="html-tag">form</span><span class="tag-indicator">&gt;</span> element.
+                </td>
+                <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+              </tr>
+              <tr>
+                <td colspan="3"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>  
+          </table>
+        </section>
+
+      <section class="event-category">
+        <h1>Keyboard Events</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Attribute</th>
+                <th>Description</th>
+                <th>Chrome|Edge|Firefox|Safari|Opera</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="attribute">onkeydown</span></td>
+                <td>Fires when a user is pressing a key. Works for all keys (including <kbd>alt</kbd>, <kbd>ctrl</kbd>, <kbd>shift</kbd>, <kbd>esc</kbd>)</td>
+                <td class="compatibility-string not-fully-compatible">Y|Y|Y|N|N</td>
+              </tr>
+              <tr>
+                <td><span class="attribute">onkeypress</span></td>
+                <td>Fires when a user presses a key. Does not work for including <kbd>alt</kbd>, <kbd>ctrl</kbd>, <kbd>shift</kbd>, <kbd>esc</kbd></td>
+                <td class="compatibility-string not-fully-compatible">Y|Y|Y|N|N</td>
+              </tr>
+              <tr>
+                <td><span class="attribute">onkeyup</span></td>
+                <td>Fires when a user releases a key.</td>
+                <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+              </tr>
+              <tr>
+                <td colspan="3">These fire in the following order: <code>onkeydown</code>, <code>onkeypress</code>, <code>onkeyup</code></td>
+              </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>  
+          </table>
+        </section>
+
+        <section class="event-category">
+          <h1>Form Events</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th>Attribute</th>
+                  <th>Description</th>
+                  <th>Chrome|Edge|Firefox|Safari|Opera</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="attribute"></span></td>
+                  <td></td>
+                  <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+                </tr>
+                <tr>
+                  <td><span class="attribute"></span></td>
+                  <td></td>
+                  <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+                </tr>
+                <tr>
+                  <td><span class="attribute"></span></td>
+                  <td></td>
+                  <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+                </tr>
+                <tr>
+                  <td><span class="attribute"></span></td>
+                  <td></td>
+                  <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+                </tr>
+                <tr>
+                  <td><span class="attribute"></span></td>
+                  <td></td>
+                  <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+                </tr>
+                <tr>
+                  <td><span class="attribute"></span></td>
+                  <td></td>
+                  <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+                </tr>
+                <tr>
+                  <td><span class="attribute"></span></td>
+                  <td></td>
+                  <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+                </tr>
+                <tr>
+                  <td><span class="attribute"></span></td>
+                  <td></td>
+                  <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+                </tr>
+                <tr>
+                  <td><span class="attribute"></span></td>
+                  <td></td>
+                  <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+                </tr>
+                <tr>
+                  <td><span class="attribute"></span></td>
+                  <td></td>
+                  <td class="compatibility-string">Y|Y|Y|Y|Y</td>
+                </tr>
+                <tr>
+                  <td colspan="3"></td>
+                </tr>
+              </tbody>
+              <tfoot>
+              </tfoot>  
+            </table>
+          </section>
+  
+        </section>
   </main>
 
   <footer>
