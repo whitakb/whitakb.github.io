@@ -1,7 +1,122 @@
 * {
-    background-color: #1E1E1E;
-    color: white;
-    font-family: "Consolas", "monaco", monospace;
-  }
-  
-  
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0 10%;
+}
+
+h1 {
+  font-style: bold;
+  font-size: 36px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+h4 {
+  font-size: small;
+  font-style: italic;
+  font-size: 24px;
+}
+
+figcaption {
+  font-size: small
+}
+
+code {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+pre {
+  word-wrap: break-word;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+}
+
+.contentbox {
+  border: 2px solid #A2A2A6;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.code {
+  background-color: #201e2f;
+  color: white;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", "Droid Sans Mono", "Consolas", "monospace";
+  font-size: small;
+}
+
+.code--snippet {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.css_topic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+th,
+td {
+  padding-right: 5px;
+  text-align: left;
+}
+
+.topic--table--th {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  border-bottom: solid 1px;
+}
+
+.topic--table--td {
+  border-bottom: solid 1px;
+}
+
+.propertyname {
+  color: #83fff5;
+}
+
+.propertydesc {
+  color: #939598;
+  padding-left: 15px;
+}
+
+.valuedesc {
+  color: #939598;
+}
+
+.valuetext {
+  color: #cc7bc2;
+}
+
+.valuenum {
+  color: #ff8973;
+}
+
+.image--declaration {
+  width: 40%;
+  min-width: 400px;
+  height: auto;
+}
+
+.selector_universal {
+  color: #ea6c8b
+}
+
+.punctuation {
+  color: white;
+}

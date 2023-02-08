@@ -1,19 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My CSS Reference</title>
-    <link rel="stylesheet" type="text/css" href="./resources/css/css-reference.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/css/css-reference.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header></header>
 
     <main>
-
+      <div class="contentbox">
+        <h1>CSS Ruleset</h1>
+        <figure>
+          <img
+            class="image--declaration"
+            src="./resources/images/css-declaration-small.png"
+            alt="CSS Declaration"
+          />
+          <figcaption>
+            CSS Ruleset (from
+            <a href="https://developer.mozilla.org/en-US/">MDN</a>)
+          </figcaption>
+        </figure>
+      </div>
+      <div class="contentbox">
+        <h1>Selectors</h1>
+        <h2>Universal Selectors</h2>
+        <pre class="code code--snippet">
+<code><span class="valuedesc">/* Selects all elements */</span>
+<span class="selector_universal">*</span> <span class="punctuation">{</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">green</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+      </div>
+      <div class="contentbox css_topic">
+        <h1>The Basics</h1>
+        <h2 class="topic-name">The Basics</h2>
+        <h3>The Basics</h3>
+        <h4>The Basics</h4>
+        <table class="topic-table code">
+          <thead class="topic-head">
+            <th class="topic--table--th">Property</th>
+            <th class="topic--table--th">Values</th>
+            <th class="topic--table--th">Notes</th>
+          </thead>
+          <tbody class="topic--body">
+            <tr>
+              <td class="topic--table--td property">
+                <table>
+                  <tr>
+                    <td class="propertyname">color</td>
+                  </tr>
+                  <tr>
+                    <td class="propertydesc">text color</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="topic--table--td value">
+                <table>
+                  <tr>
+                    <td class="valuetext">white</td>
+                    <td class="valuedesc">valid color name</td>
+                  </tr>
+                  <tr>
+                    <td class="valuenum">#ffffff</td>
+                    <td class="valuedesc">hex color number</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="topic--table--td notes"></td>
+            </tr>
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
     </main>
 
     <footer></footer>
-</body>
+  </body>
 </html>
