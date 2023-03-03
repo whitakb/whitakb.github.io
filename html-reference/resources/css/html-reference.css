@@ -1,10 +1,11 @@
-* {
+body {
   background-color: #1E1E1E;
   color: white;
   font-family: "Consolas", "monaco", monospace;
 }
 
-.tag, .html-tag {
+.tag,
+.html-tag {
   color: #569CD6;
 }
 
@@ -12,8 +13,9 @@
   color: #9CDCFE;
 }
 
-.attribute-val, .attribute-vali {
-  color: #CE9178; 
+.attribute-val,
+.attribute-vali {
+  color: #CE9178;
 }
 
 .attribute-vali {
@@ -28,7 +30,9 @@ thead {
   font-weight: bold;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid;
   border-color: #808080;
   border-collapse: collapse;
@@ -47,7 +51,8 @@ td {
   text-align: right;
 }
 
-.needs-work, .learn-me {
+.needs-work,
+.learn-me {
   background-color: red;
   color: white;
   text-align: center;
@@ -76,6 +81,7 @@ section {
 }
 
 .drag-me {
+  width: -moz-fit-content;
   width: fit-content;
 }
 
