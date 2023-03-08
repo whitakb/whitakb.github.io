@@ -1,0 +1,144 @@
+body {
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 69px;
+  overflow: hidden;
+  background-color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid seashell;
+}
+
+nav {
+  margin: 10px;
+}
+
+nav a {
+  margin: 15px;
+  color: seashell;
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 69px;
+}
+
+.logo {
+  height: 50px;
+  margin 10px;
+}
+
+.contentbox {
+  margin: 50px auto 50px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentbox__mission {
+  background-image: url("../images/img-mission-background.jpg");
+  width: 1200px;
+  height: 700px;
+  justify-content: center;
+}
+
+
+.contentbox_content {
+  text-align: center;
+  margin: 0;
+}
+
+.mission_content {
+  background-color: black;
+  opacity: 1;
+}
+
+.mission_content_text {
+  margin: 5px;
+  opacity: 0.9;
+}
+
+.contentbox__featured_tea {
+  width: 1000px;
+  justify-content: center;
+}
+
+.images_box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured_img {
+  width: 300px;
+  height: 200px;
+  margin: 0 -30px 10px -30px;
+}
+
+.contentbox__locations {
+  background-image: url("../images/img-locations-background.jpg");
+  background-size: 100% 125%;
+  width: 1200px;
+  height: 500px;
+  margin: 50px auto 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.location_title {
+  margin: 50px 0 15px 0;
+  padding: 0;
+}
+
+.locations {
+  background-image: url("../images/img-locations-background.jpg");
+}
+
+.locations_box {
+  display: flex;
+  align-items: center;
+}
+
+.location {
+  width: 300px;
+  margin: 0 40px 0 40px;
+  background-color: black;
+  opacity: 1;
+}
+
+.footerbox {
+  margin: 50px auto 50px auto;
+  width: 1200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerbox__element1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footerbox__element2 {
+  margin: 15px;
+}
+
+.copyright {
+  margin-left: 20px;
+  font-size: 16px;
+}
