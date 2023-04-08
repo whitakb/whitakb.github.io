@@ -1,0 +1,171 @@
+.myFeedbackBox {
+  width: 45%;
+  height: 150px;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: xx-large;
+}
+
+.button {
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  border-style: solid;
+}
+
+/* because we are using the "hover watcher" (see the js file), we
+need to preface this with "body.hashover" */
+body.hasHover .button:hover {
+  background-color: black;
+  color: white;
+  background-image: none !important;
+  font-size: medium;
+  font-weight: bold;
+}
+
+/* block for the hover troubleshooting text */
+.on {
+  display: none;
+}
+
+body.hasHover .on {
+  display: inline;
+}
+
+body.hasHover .off {
+  display: none;
+}
+
+/* end block for the hover troubleshooting text */
+.feedbackdiv {
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.feedbackdiv--p {
+  padding: 5px;
+  margin: 0px;
+  font-size: large;
+}
+
+.controldiv {
+  padding: 5px;
+  margin: 0px;
+}
+
+.buttondiv {
+  padding: 5px 20px 10px 20px;
+  margin: 0px;
+}
+
+.buttondiv--sleep {
+  background-color: rgb(185, 231, 240);
+}
+
+.buttondiv--nosleep {
+  background-color: rgb(186, 240, 185);
+}
+
+.buttondiv--kitchen {
+  background-color: rgb(238, 234, 120);
+}
+
+.buttondiv--title {
+  margin: 0px;
+  font-size: large;
+  font-weight: normal;
+}
+
+.button--control {
+  width: 50px;
+  height: 50px;
+  /*border-radius: 50%;*/
+  border: none;
+  margin-right: 15px;
+}
+
+.button--station {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  margin-top: 5px;
+}
+
+.button--bedroom {
+  background-color: blue;
+  color: white;
+}
+
+.button--kitchen {
+  border-color: rgb(213, 213, 7);
+  border-width: 10px;
+}
+
+.button--logo {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  color: rgba(0, 0, 0, 0)
+}
+
+.stop {
+  background-image: url("../images/Stop.png");
+}
+
+.play {
+  background-image: url("../images/Play.png");
+}
+
+.quieter {
+  background-image: url("../images/VolumeDown.png");
+}
+
+.louder {
+  background-image: url("../images/VolumeUp.png");
+}
+
+.classical {
+  background-image: url("../images/Classical.png");
+}
+
+.dodgers {
+  background-image: url("../images/Dodgers.png");
+}
+
+.ESPN {
+  background-image: url("../images/ESPN.png");
+}
+
+.forties {
+  background-image: url("../images/Forties.png");
+}
+
+.MLB {
+  background-image: url("../images/MLB.png");
+}
+
+.nets {
+  background-image: url("../images/Nets.png");
+}
+
+.NFL {
+  background-image: url("../images/NFL.png");
+}
+
+.sinatra {
+  background-image: url("../images/Sinatra.png");
+}
+
+.WBEZ {
+  background-image: url("../images/WBEZ.png");
+  /* square icons lose the border*/
+  border: none;
+}
+
+.WAMC {
+  background-image: url("../images/WAMC.png");
+  /* square icons lose the border*/
+  border: none;
+}

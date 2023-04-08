@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My CSS Reference</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/css/css-reference.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <div class="contentbox">
+        <h1>CSS Ruleset</h1>
+        <div class="contentbox--subcontent">
+          <figure>
+            <img
+              class="image--declaration"
+              src="./resources/images/css-declaration-small.png"
+              alt="CSS Declaration"
+            />
+            <figcaption>
+              CSS Ruleset (from
+              <a href="https://developer.mozilla.org/en-US/">MDN</a>)
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="contentbox">
+        <h1>Selectors</h1>
+        <div class="contentbox--subcontent">
+          <h2>Universal Selectors</h2>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="valuedesc">/* Selects all elements */</span>
+<span class="selector--universal">*</span> <span class="punctuation">{</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">green</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+          </div>
+          <div class="infobox">
+            <ul>
+              <li><span class="inline_code"></span>* - matches all elements</li>
+              <li>Can be used with namespaces</li>
+              <li>
+                <ul>
+                  <li>
+                    <span class="inline_code">ns|*</span> - matches all elements
+                    in namespace ns
+                  </li>
+                  <li>
+                    <span class="inline_code">*|*</span> - matches all elements
+                  </li>
+                  <li>
+                    <span class="inline_code">|*</span> - matches all elements
+                    without any declared namespace
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contentbox--subcontent">
+          <h2>Type Selectors</h2>
+          <p class="subheading">Based on HTML element type</p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="valuedesc">/* All &lt;a&gt; elements */</span>
+<span class="selector--element">a</span> <span class="punctuation">{</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">red</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+          </div>
+          <div class="infobox">
+            <ul>
+              <li>
+                <span class="inline_code">a</span> - matches all &lta&gt
+                elements
+              </li>
+              <li>
+                <span class="inline_code">ns|a</span> - matches all &lta&gt
+                elements in namespace ns
+              </li>
+              <li>
+                <span class="inline_code">*|a</span> - matches all &lta&gt
+                elements
+              </li>
+              <li>
+                <span class="inline_code">|a</span> - matches all &lta&gt
+                elements without any declared namespace
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contentbox--subcontent">
+          <h2>Class Selectors</h2>
+          <p class="subheading">Based on class attribute.</p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="valuedesc">/* All elements with class="spacious" */</span>
+<span class="selector--class">.spacious</span> <span class="punctuation">{</span>
+    <span class="propertyname">margin</span><span class="punctuation">:</span> <span class="valuenum">2em</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code>
+
+<code><span class="valuedesc">/* All &lt;li&gt; elements with class="spacious" */</span>
+<span class="selector--class">li.spacious</span> <span class="punctuation">{</span>
+    <span class="propertyname">margin</span><span class="punctuation">:</span> <span class="valuenum">2em</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code>
+
+<code><span class="valuedesc">/* All &lt;li&gt; elements with class list that
+   includes both "spacious" and "elegant" */</span>
+<span class="selector--class">li.spacious.elegant</span> <span class="punctuation">{</span>
+    <span class="propertyname">margin</span><span class="punctuation">:</span> <span class="valuenum">2em</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code>
+</pre>
+          </div>
+          <div class="infobox">
+            <p>Equivalent to select by attribute: [class~=class_name]</p>
+          </div>
+        </div>
+
+        <div class="contentbox--subcontent">
+          <h2>ID Selectors</h2>
+          <p class="subheading">
+            Matches an element with matching id (exactly).
+          </p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="valuedesc">/* The element with id="demo" */</span>
+<span class="selector--class">#demo</span> <span class="punctuation">{</span>
+    <span class="propertyname">border</span><span class="punctuation">:</span> <span class="valuetext">red 2px solid</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code>
+</pre>
+          </div>
+          <div class="infobox"></div>
+        </div>
+
+        <div class="contentbox--subcontent">
+          <h2>Attribute Selectors</h2>
+          <p class="subheading">
+            Based on the presence or value of a given attribute.
+          </p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="valuedesc">/* &lt;a&gt; elements with a title attribute */</span>
+<span class="selector--class">a[title]</span> <span class="punctuation">{</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">purple</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code>
+
+<code><span class="valuedesc">/* &lt;a&gt; elements with an href matching
+   "https://example.org" */</span>
+<span class="selector--class">a[href="https://example.org"]</span> <span class="punctuation">{</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">green</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code>
+
+<code><span class="valuedesc">/* &lt;a&gt; elements with an href containing "example" */</span>
+<span class="selector--class">a[href*="example"]</span> <span class="punctuation">{</span>
+    <span class="propertyname">font-size</span><span class="punctuation">:</span> <span class="valuenum">2em</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code>
+</pre>
+          </div>
+          <div class="infobox">
+            <p>Syntax</p>
+            <ul>
+              <li>
+                <span class="inline_code">[attr]</span> - elements with an
+                attribute named attr
+              </li>
+              <li>
+                <span class="inline_code">[attr=value]</span> - elements with
+                attribute named attr whose value matches value exactly
+              </li>
+              <li>
+                <span class="inline_code">[attr~=value]</span> - elements with
+                attribute named attr whose value is a whitespace-separated list,
+                one of which is exactly value
+              </li>
+              <li>
+                <span class="inline_code">[attr|=value]</span> - (generally used
+                for language subcode matches) elements with attribute named attr
+                whose value is exactly value or begins with value followed by a
+                hyphen
+              </li>
+              <li>
+                <span class="inline_code">[attr^=value]</span> - elements with
+                attribute named attr whose value is prefixed with value
+              </li>
+              <li>
+                <span class="inline_code">[attr$=value]</span> - elements with
+                attribute named attr whose value is suffixed by value
+              </li>
+              <li>
+                <span class="inline_code">[attr*=value]</span> - elements with
+                attribute named attr whose contains at least one occurance of
+                value within the string
+              </li>
+              <li>
+                <span class="inline_code">[attr ... i]</span> - an i (or I)
+                before the closing bracket causes a case-insensitive match
+              </li>
+              <li>
+                <span class="inline_code">[attr ... s]</span> - an s (or S)
+                before the closing bracket causes a case-sensitive match
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="contentbox">
+        <h1>Selector List</h1>
+        <div class="contentbox--subcontent">
+          <h2>Grouping</h2>
+          <p class="subheading">Selects all matching nodes</p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="selector--element">span</span>,
+<span class="selector--element">div</span> <span class="punctuation">{</span>
+    <span class="propertyname">border</span><span class="punctuation">:</span> <span class="valuetext">red 2px solid</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code>
+</pre>
+          </div>
+          <div class="infobox">
+            <p>
+              If any selector in the list is invalid, then the entire list will
+              be invalid.
+            </p>
+            <p>
+              Can make a "forgiving" list using
+              <span class="inline_code">:is(h1, h2:maybe-unsupported, h3)</span
+              >. In this list, any valid selectors will still be valid. This has
+              different specificity rules than just a list.
+            </p>
+          </div>
+        </div>
+        <div class="contentbox--subcontent">
+          <h2>Relative Selector List</h2>
+          <p class="subheading">
+            Can have a list which is parsed as relative selectors
+          </p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="selector--element">h2:has(+ p, + ul.red)</span> <span class="punctuation">{</span>
+    <span class="propertyname">font-style</span><span class="punctuation">:</span> <span class="valuetext">italic</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code>
+</pre>
+          </div>
+          <div class="infobox">
+            <p>
+              The example will be applied to any
+              <span class="inline_code">h2</span> heading that is immediately
+              followed by <span class="inline_code">&lt;p&gt;</span> or
+              <span class="inline_code">&lt;ul class="red"&gt;</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contentbox">
+        <h1>Selectors: Combinators</h1>
+
+        <div class="contentbox--subcontent">
+          <h2>Descendent Combinator</h2>
+          <p class="subheading">
+            Select nodes that are decendents of the first element
+          </p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="valuedesc">/* List items that are descendants 
+of the "my-things" list */</span>
+<span class="selector--universal">ul.my-things li</span> <span class="punctuation">{</span>
+    <span class="propertyname">margin</span><span class="punctuation">:</span> <span class="valuetext">2em</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+          </div>
+          <div class="infobox">
+            <p>
+              The descendant combinator — typically a single space (" ")
+              character — combines two selectors such that elements matched by
+              the second selector are selected if they have an ancestor (parent,
+              parent's parent, parent's parent's parent, etc.) element matching
+              the first selector. Selectors that utilize a descendant combinator
+              are called descendant selectors.
+            </p>
+            <p>
+              The descendant combinator is technically one or more CSS white
+              space characters — the space character and/or one of four control
+              characters: carriage return, form feed, new line, and tab
+              characters — between two selectors in the absence of another
+              combinator. Additionally, the white space characters of which the
+              combinator is comprised may contain any number of CSS comments.
+            </p>
+          </div>
+        </div>
+
+        <div class="contentbox--subcontent">
+          <h2>Child Combinator</h2>
+          <p class="subheading">
+            Select nodes that are direct children of the first element
+          </p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="valuedesc">/* List items that are children 
+of the "my-things" list */</span>
+<span class="selector--universal">ul.my-things &gt; li</span> <span class="punctuation">{</span>
+    <span class="propertyname">margin</span><span class="punctuation">:</span> <span class="valuetext">2em</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+          </div>
+          <div class="infobox">
+            <p>
+              The child combinator (&gt;) is placed between two CSS selectors.
+              It matches only those elements matched by the second selector that
+              are the direct children of elements matched by the first.
+            </p>
+            <p>
+              This is stricter than the descendant combinator, which matches all
+              elements matched by the second selector for which there exists an
+              ancestor element matched by the first selector, regardless of the
+              number of "hops" up the DOM.
+            </p>
+          </div>
+        </div>
+
+        <div class="contentbox--subcontent">
+          <h2>General Sibling Combinator</h2>
+          <p class="subheading">
+            Select nodes that are following the first element and are children
+            of the same parent
+          </p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="valuedesc">/* Paragraphs that are siblings of 
+and subsequent to any image */</span>
+<span class="selector--universal">img ~ p</span> <span class="punctuation">{</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">red</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+          </div>
+          <div class="infobox"></div>
+        </div>
+
+        <div class="contentbox--subcontent">
+          <h2>Adjacent Sibling Combinator</h2>
+          <p class="subheading">
+            Select nodes that are <em>immediately</em> following the first
+            element and are children of the same parent
+          </p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="valuedesc">/* Paragraphs that come immediately 
+after any image */</span>
+<span class="selector--universal">img + p</span> <span class="punctuation">{</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">red</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+          </div>
+          <div class="infobox"></div>
+        </div>
+
+        <div class="contentbox--subcontent">
+          <h2>Column Combinator</h2>
+          <p class="subheading">Experimental and not really supported yet</p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="valuedesc">/* Table cells that belong to 
+the "selected" column */</span>
+<span class="selector--universal">col.selected||td</span> <span class="punctuation">{</span>
+    <span class="propertyname">background</span><span class="punctuation">:</span> <span class="valuetext">gray</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+          </div>
+          <div class="infobox">
+            <p>
+              The column combinator (<span class="inline_code">||</span>) is
+              placed between two CSS selectors. It matches only those elements
+              matched by the second selector that belong to the column elements
+              matched by the first.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contentbox">
+        <h1>Selectors: Pseudo-Classes and Pseudo-Elements</h1>
+
+        <div class="contentbox--subcontent">
+          <h2>Pseudo-Classes</h2>
+          <p class="subheading">React to the state of an element</p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="valuedesc">/* Any button over which the user's 
+pointer is hovering */</span>
+<span class="selector--universal">button:hover</span> <span class="punctuation">{</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">blue</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+          </div>
+          <div class="infobox">
+            <p>
+              A pseudo-class is a keyword added to a selector that specifies a
+              special state of the selected element(s), like
+              <a class="inline_code code_link" href="#hover">:hover</a>
+            </p>
+            <table class="pseudotable">
+              <caption>
+                Pseudo-Classes
+              </caption>
+              <thead>
+                <tr>
+                  <th class="pseudotable--col1">Category</th>
+                  <th class="pseudotable--col2">Class</th>
+                  <th class="pseudotable--col3">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowspan="3" class="pseudotable--rowhead">
+                    Display state pseudo-classes
+                  </th>
+                  <td class="codecell">:fullscreen</td>
+                  <td>Matches an element in fullscreen mode</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:modal</td>
+                  <td>
+                    In a state which excludes all interactions with other
+                    elements until the action is dismissed
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:picture-in-picture</td>
+                  <td>In picture-in-picture mode</td>
+                </tr>
+
+                <tr>
+                  <th rowspan="17">Input pseudo-classes</th>
+                  <td class="codecell">:autofill</td>
+                  <td>
+                    Matches when an
+                    <a
+                      class="inline_code code_link"
+                      href="../html-reference/html-reference.html#linktarget_input"
+                      target="_blank"
+                      rel="noopener"
+                      >&lt;input&gt;</a
+                    >
+                    has been autofilled
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:enabled</td>
+                  <td>A user interface element in enabled state</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:disabled</td>
+                  <td>A user interface element in disabled state</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:read-only</td>
+                  <td>Any element that can't be changed by user</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:read-write</td>
+                  <td>Any element that us user-editable</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:placeholder-shown</td>
+                  <td>
+                    An input item showing placeholder text, like an
+                    <a
+                      class="inline_code code_link"
+                      href="../html-reference/html-reference.html#linktarget_input"
+                      target="_blank"
+                      rel="noopener"
+                      >&lt;input&gt;</a
+                    >
+                    <a
+                      class="inline_code code_link"
+                      href="../html-reference/html-reference.html#linktarget_textarea"
+                      target="_blank"
+                      rel="noopener"
+                      >&lt;textarea&gt;</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:default</td>
+                  <td>
+                    One or more UI elements that are the default among a set
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:checked</td>
+                  <td>
+                    Elements like checkbox or radio button when toggled on
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:indeterminate</td>
+                  <td>UI elements in an indeterminate state</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:blank</td>
+                  <td>
+                    A user-input item which is empty - an empty string or a null
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:valid</td>
+                  <td>An element with valid contents (like a good email)</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:invalid</td>
+                  <td>An element with invalid contents (like a bad email)</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:in-range</td>
+                  <td>
+                    For an element with range (like a slider), when selected
+                    value is in range
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:out-of-range</td>
+                  <td>
+                    For an element with range (like a slider), when selected
+                    value is out of range
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:required</td>
+                  <td>Form element is required</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:optional</td>
+                  <td>Form element is optional</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:user-invalid</td>
+                  <td>
+                    Incorrect input, but only after user has interacted with it
+                  </td>
+                </tr>
+
+                <tr>
+                  <th rowspan="2" class="pseudotable--rowhead">
+                    Language-related pseudo-classes
+                  </th>
+                  <td class="codecell">:dir()</td>
+                  <td>
+                    Selects an element based on the directionality determined by
+                    document language.<br />
+                    <pre class="code code--snippet">
+<code><span class="selector--universal">:dir([ltr | rtl])</span> <span class="punctuation">{</span>
+    <span class="propertyname">/* ... */</span>
+<span class="punctuation">}</span></code></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:lang()</td>
+                  <td>
+                    Selects an element based on its content language.<br />
+                    <pre class="code code--snippet">
+<code><span class="selector--universal">:lang(&lt;language-code&gt;)</span> <span class="punctuation">{</span>
+    <span class="propertyname">/* ... */</span>
+<span class="punctuation">}</span></code></pre>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th rowspan="7" class="pseudotable--rowhead">
+                    Links-related pseudo-classes
+                  </th>
+                  <td class="codecell">:any-link</td>
+                  <td>
+                    Matches an element if the element would match either
+                    <a class="inline_code code_link" href="#linktarget_link"
+                      >:link</a
+                    >
+                    or
+                    <a class="inline_code code_link" href="#linktarget_visited"
+                      >:visited</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td id="linktarget_link" class="codecell">:link</td>
+                  <td>
+                    Matches links that have not been visited. See
+                    <a href="#style_links">Cascading link styles</a>.
+                  </td>
+                </tr>
+                <tr>
+                  <td id="linktarget_visited" class="codecell">:visited</td>
+                  <td>
+                    Matches links that have been visited. See
+                    <a href="#style_links">Cascading link styles</a>.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:local-link</td>
+                  <td>
+                    Matches links whose absolute URL is the same as the target
+                    URL, such as anchor links to the same page.
+                  </td>
+                </tr>
+                <tr>
+                  <td id="linktarget_target" class="codecell">:target</td>
+                  <td>
+                    Matches the element which is the target of a URL in the
+                    document just selected. For instance, used to highlight an
+                    object just linked to from a table of contents
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:target-within</td>
+                  <td>
+                    Like
+                    <a class="inline_code code_link" href="#linktarget_target"
+                      >:target</a
+                    >, but will highlight the object if anything within it has
+                    been linked to. For instance, used to highlight an entire
+                    article if any of the elements inside it was linked to.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:scope</td>
+                  <td>
+                    Currently, when used in a stylesheet,
+                    <span class="codecell">:scope</span> is the same as
+                    <a class="inline_code code_link" href="#linktarget_root"
+                      >:root</a
+                    >, since there is not at this time a way to explicitly
+                    establish a scoped element. When used from a DOM API such as
+                    <span class="codecell">querySelector()</span>,
+                    <span class="codecell">querySelectorAll()</span>,
+                    <span class="codecell">matches()</span>, or
+                    <span class="codecell">Element.closest()</span>, :scope
+                    matches the element on which the method was called.
+                  </td>
+                </tr>
+
+                <tr>
+                  <th rowspan="2" class="pseudotable--rowhead">
+                    Resource state pseudo-classes
+                  </th>
+                  <td class="codecell">:playing</td>
+                  <td>a media element that is playing</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:paused</td>
+                  <td>
+                    a resource element, capable of playing, which is paused
+                  </td>
+                </tr>
+
+                <tr>
+                  <th rowspan="3" class="pseudotable--rowhead">
+                    Time-dimensional pseudo-classes<br /><br />Apply when
+                    viewing something that has timing, like a WebVTT caption
+                    track
+                  </th>
+                  <td class="codecell">:current</td>
+                  <td>The ancestor of the element being played</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:past</td>
+                  <td>
+                    An element that occurs entirely before the
+                    <span class="codecell">:current</span> element
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:future</td>
+                  <td>
+                    An element that occurs entirely after the
+                    <span class="codecell">:current</span> element
+                  </td>
+                </tr>
+
+                <tr>
+                  <th rowspan="12" class="pseudotable--rowhead">
+                    Tree-structural pseudo-classes
+                  </th>
+                  <td id="linktarget_root" class="codecell">:root</td>
+                  <td>
+                    an element that is the root of the document, typically the
+                    <a
+                      class="inline_code code_link"
+                      href="../html-reference/html-reference.html#linktarget_html"
+                      target="_blank"
+                      rel="noopener"
+                      >&lt;HTML&gt;</a
+                    >
+                    element
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:empty</td>
+                  <td>
+                    an element with no children other than whitespace characters
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:nth-child</td>
+                  <td>
+                    uses <a href="#an+b"><i>An+B</i></a> notation to select
+                    elements from a list of sibling elements<br />
+                    <pre class="code code--snippet">
+<code><span class="selector--universal">li:nth-child(-n + 3)</span> <span class="punctuation">{</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">blue</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+                    <br />
+                    <pre class="code code--snippet">
+<code><span class="selector--universal">li:nth-child(even)</span> <span class="punctuation">{</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">blue</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:nth-last-child</td>
+                  <td>
+                    uses <a href="#an+b"><i>An+B</i></a> notation to select
+                    elements from a list of sibling elements, starting from the
+                    end of the list
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:first-child</td>
+                  <td>the element which is first among siblings</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:last-child</td>
+                  <td>the element which is last among siblings</td>
+                </tr>
+                <tr>
+                  <td class="codecell">:only-child</td>
+                  <td>an element with no siblings</td>
+                </tr>
+                <tr>
+                  <td id="linktarget_nthoftype" class="codecell">
+                    :nth-of-type
+                  </td>
+                  <td>
+                    uses <a href="#an+b"><i>An+B</i></a> notation to select
+                    elements from a list of sibling elements, but only of a
+                    particular type<br />
+                    <pre class="code code--snippet">
+<code><span class="selector--universal">dd:nth-of-type(even)</span> <span class="punctuation">{</span>
+    <span class="propertyname">border</span><span class="punctuation">:</span> <span class="valuetext">2px solid orange</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:nth-last-of-type</td>
+                  <td>
+                    like
+                    <a
+                      class="inline_code code_link"
+                      href="#linktarget_nthoftype"
+                      >:nth-of-type</a
+                    >, but counts from the end
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:first-of-type</td>
+                  <td>
+                    selects the first element of a type from a list of sibling
+                    elements<br />
+                    <pre class="code code--snippet">
+<code><span class="selector--universal">dd:first-of-type</span> <span class="punctuation">{</span>
+    <span class="propertyname">border</span><span class="punctuation">:</span> <span class="valuetext">2px solid orange</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:last-of-type</td>
+                  <td>
+                    selects the last element of a type from a list of sibling
+                    elements
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:only-of-type</td>
+                  <td>
+                    matches an element of the chosen selector when that element
+                    has no siblings of that type
+                  </td>
+                </tr>
+
+                <tr>
+                  <th rowspan="5" class="pseudotable--rowhead">
+                    User-action pseudo-classes
+                  </th>
+                  <td id="linktarget_hover" class="codecell">:hover</td>
+                  <td>
+                    Matches when a user designates an item with a pointing
+                    device, like holding over the element with a mouse cursor.
+                    Also see
+                    <a href="#style_links">Cascading link styles</a>.
+                  </td>
+                </tr>
+                <tr>
+                  <td id="linktarget_active" class="codecell">:active</td>
+                  <td>
+                    Matches when an item is being activated by a user, like when
+                    the item is clicked on. Also see
+                    <a href="#style_links">Cascading link styles</a>.
+                  </td>
+                </tr>
+                <tr>
+                  <td id="linktarget_focus" class="codecell">:focus</td>
+                  <td>
+                    Matches when an element has focus. Also see
+                    <a href="#style_links">Cascading link styles</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:focus-visible</td>
+                  <td>
+                    matches when an item to which
+                    <a class="inline_code code_link" href="#linktarget_focus"
+                      >:focus</a
+                    >
+                    applies and the user agent determines the element should be
+                    visibly focused
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:focus-within</td>
+                  <td>
+                    matches an element with focus, plus any elements which has
+                    descendent to which
+                    <a class="inline_code code_link" href="#linktarget_focus"
+                      >:focus</a
+                    >
+                    applies
+                  </td>
+                </tr>
+
+                <tr>
+                  <th rowspan="4" class="pseudotable--rowhead">
+                    Functional pseudo-classes
+                  </th>
+                  <td id="linktarget_is" class="codecell">:is()</td>
+                  <td>
+                    Takes a list of selectors as the argument, and selects any
+                    element that meets any of the selectors in the list. Has
+                    advantages over just using a list of selectors:
+                    <ul>
+                      <li>
+                        Allows for writing large list of selectors in compact
+                        form
+                      </li>
+                      <li>
+                        Is a "forgiving" list, so if one of the selectors is
+                        invalid, the others will still work
+                      </li>
+                    </ul>
+                    <br />
+                    <pre class="code code--snippet">
+<code><span class="selector--universal">:is(section, article, aside, nav) h1 </span> <span class="punctuation">{</span>
+    <span class="propertyname">font-size</span><span class="punctuation">:</span> <span class="valuetext">25px</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+                    <p>Pseudo elements are not valid in the selectors list.</p>
+                    <p>
+                      Similar to
+                      <a class="inline_code code_link" href="#linktarget_where"
+                        >:where</a
+                      >, but has different specificity.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:not()</td>
+                  <td>
+                    Like
+                    <a class="inline_code code_link" href="#linktarget_is"
+                      >:is</a
+                    >, but the negation of the selector list. Has specificity
+                    impacts.
+                  </td>
+                </tr>
+                <tr>
+                  <td id="linktarget_where" class="codecell">:where()</td>
+                  <td>
+                    Like
+                    <a class="inline_code code_link" href="#linktarget_is"
+                      >:is</a
+                    >, but with different specificity.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">:has()</td>
+                  <td>
+                    Represents an element if any of the
+                    <span class="needs_work"
+                      ><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors#relative_selector"
+                        target="_blank"
+                        rel="noopener"
+                        >relative selectors</a
+                      ></span
+                    >
+                    that are passed as an argument match at least one element
+                    when anchored against this element. This pseudo-class
+                    presents a way of selecting a parent element or a previous
+                    sibling element with respect to a reference element by
+                    taking a
+                    <span class="needs_work"
+                      ><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Selector_list#relative_selector_list"
+                        target="_blank"
+                        rel="noopener"
+                        >relative selector list</a
+                      ></span
+                    >
+                    as an argument
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div>
+              <h3 id="an+b">Functional (<i>An+B</i>) Notation</h3>
+              <p>
+                Represents elements whose numeric position in a series of
+                siblings matches the pattern <i>An+B</i>, for every positive
+                integer or zero value of <i>n</i>. It can be read as the
+                <i>An+B-th</i> element of a list where:
+              </p>
+              <ul>
+                <li><i>A</i> is an integer step size</li>
+                <li><i>B</i> is an integer offset</li>
+                <li><i>n</i> is all nonnegative integers, starting from 0</li>
+              </ul>
+              <p>Examples</p>
+              <ul>
+                <li>
+                  <span class="codecell">tr:nth-child(odd)</span> or
+                  <span class="codecell">tr:nth-child(2n+1)</span>: The odd rows
+                  of an HTML table
+                </li>
+                <li>
+                  <span class="codecell">tr:nth-child(even)</span> or
+                  <span class="codecell">tr:nth-child(2n)</span>: The even rows
+                  of an HTML table
+                </li>
+                <li>
+                  <span class="codecell">nth-child(7)</span>: The seventh
+                  element
+                </li>
+                <li>
+                  <span class="codecell">nth-child(5n)</span>: Every 5th element
+                  (5, 10, 15, ...). There is no 0 element, so that doesn't show.
+                </li>
+                <li>
+                  <span class="codecell">nth-child(n+7)</span>: The seventh
+                  element and each following element (7, 8, 9, ...)
+                </li>
+                <li>
+                  <span class="codecell">nth-child(3n+4)</span>: (4, 7, 10, 13,
+                  ...)
+                </li>
+                <li>
+                  <span class="codecell">nth-child(-n+3)</span>: The first 3
+                  elements (3, 2, 1), but doesn't go beyond 1 because 0 and -n
+                  are invalid
+                </li>
+                <li>
+                  <span class="codecell">p:nth-child(n)</span>: Every
+                  <span class="codecell">&lt;p&gt;</span> element in a group of
+                  siblings. The same as <span class="codecell">p</span>, but
+                  with more specificity.
+                </li>
+                <li>
+                  <span class="codecell">p:nth-child(1)</span> or
+                  <span class="codecell">p:nth-child(0n+1)</span>: Every
+                  <span class="codecell">&lt;p&gt;</span> element which is the
+                  first one in a group of siblings.
+                </li>
+                <li>
+                  <span class="codecell">p:nth-child(n+8):nth-child(-n+15)</span
+                  >: the 8th through 15th
+                  <span class="codecell">&lt;p&gt;</span> elements in a series
+                  of siblings
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 id="style_links">
+                Cascading Links Styles (<span class="codecell">&lt;a&gt;</span>)
+              </h3>
+              <p>
+                The recommended order is
+                <a class="inline_code code_link" href="#linktarget_link"
+                  >:link</a
+                >,<a class="inline_code code_link" href="#linktarget_visited"
+                  >:visited</a
+                >,<a class="inline_code code_link" href="#linktarget_focus"
+                  >:focus</a
+                >,<a class="inline_code code_link" href="#linktarget_hover"
+                  >:hover</a
+                >,<a class="inline_code code_link" href="#linktarget_active"
+                  >:active</a
+                >
+              </p>
+              <p>
+                The
+                <a class="inline_code code_link" href="#linktarget_link"
+                  >:link</a
+                >
+                and
+                <a class="inline_code code_link" href="#linktarget_visited"
+                  >:visited</a
+                >
+                pseudo-classes should generally come first. Next should be
+                <a class="inline_code code_link" href="#linktarget_focus"
+                  >:focus</a
+                >
+                and
+                <a class="inline_code code_link" href="#linktarget_hover"
+                  >:hover</a
+                >—they're specified now so that they override and apply to both
+                visited and unvisited links. If
+                <a class="inline_code code_link" href="#linktarget_focus"
+                  >:focus</a
+                >
+                precedes
+                <a class="inline_code code_link" href="#linktarget_hover"
+                  >:hover</a
+                >, the hover effect will apply to links with keyboard input
+                focus. The
+                <a class="inline_code code_link" href="#linktarget_active"
+                  >:active</a
+                >
+                pseudo-class should usually come last, since we usually want to
+                indicate clearly any links that have been activated.
+              </p>
+              <p>
+                This isn't the only useful order, nor is it in any way the
+                "right" order. The order in which you specify your
+                pseudo-classes will depend on the effects you want to show with
+                different combinations of states
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contentbox--subcontent">
+          <h2>Pseudo-Elements</h2>
+          <p class="subheading">Style part of a particular element</p>
+          <div class="codebox">
+            <pre class="code code--snippet">
+<code><span class="valuedesc">/* The first line of every &lt;p&gt; element. */</span>
+<span class="selector--universal">p::first-line</span> <span class="punctuation">{</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">blue</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+          </div>
+          <div class="infobox">
+            <p>
+              A CSS pseudo-element is a keyword added to a selector that lets
+              you style a specific part of the selected element(s). For example,
+              <a class="code_link inline_code" href="#deadlink">::first-line</a>
+              can be used to change the font of the first line of a paragraph.
+            </p>
+            <table class="pseudotable">
+              <caption>
+                Pseudo-Elements
+              </caption>
+              <thead>
+                <tr>
+                  <th class="pseudotable--col1">Category</th>
+                  <th class="pseudotable--col2">Element</th>
+                  <th class="pseudotable--col3">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowspan="2" class="pseudotable--rowhead">
+                    Text Position
+                  </th>
+                  <td class="codecell">::first-letter</td>
+                  <td>
+                    <p>
+                      Applies styles to the first letter of the first line of a
+                      <a class="topic_link" href="#deadlink">block-level</a>
+                      element, but only when not preceded by other content (such
+                      as images or inline tables).
+                    </p>
+                    <p>
+                      The first letter of an element is not always trivial to
+                      identify:
+                    </p>
+                    <ul>
+                      <li>
+                        Punctuation that precedes or immediately follows the
+                        first letter is included in the match. Punctuation
+                        includes any Unicode character defined in the open (Ps),
+                        close (Pe), initial quote (Pi), final quote (Pf), and
+                        other punctuation (Po) classes.
+                      </li>
+                      <li>
+                        Some languages have digraphs that are always capitalized
+                        together, like the IJ in Dutch. In these cases, both
+                        letters of the digraph should be matched by the
+                        <span class="codecell">::first-letter</span>
+                        pseudo-element.
+                      </li>
+                      <li>
+                        A combination of the
+                        <a
+                          class="inline_code code_link"
+                          href="#linktarget_before"
+                          >::before</a
+                        >
+                        pseudo-element and the
+                        <a class="code_link inline_code" href="#deadlink"
+                          >content</a
+                        >
+                        property may inject some text at the beginning of the
+                        element. In that case, ::first-letter will match the
+                        first letter of this generated content.
+                      </li>
+                    </ul>
+                    <p>
+                      Only a small subset of CSS properties can be used with
+                      <span class="codecell"> ::first-letter</span>. See
+                      <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter"
+                        target="_blank"
+                        rel="noopener"
+                        >MDN</a
+                      >
+                      for the list.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">::first-line</td>
+                  <td>
+                    <p>
+                      Applies styles to the first line of a
+                      <a class="topic_link" href="#deadlink">block-level</a>
+                      element.
+                    </p>
+                    <p>
+                      Only a small subset of CSS properties can be used with
+                      <span class="codecell"> ::first-letter</span>. See
+                      <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/::first-line"
+                        target="_blank"
+                        rel="noopener"
+                        >MDN</a
+                      >
+                      for the list.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <th rowspan="3" class="pseudotable--rowhead">
+                    HTML Elements
+                  </th>
+                  <td class="codecell">::marker</td>
+                  <td>
+                    selects the marker box of a list item, which typically
+                    contains a bullet or number. It works on any element or
+                    pseudo-element set to
+                    <a class="code_link inline_code" href="#deadlink"
+                      >display: list-item</a
+                    >, such as the
+                    <a
+                      class="inline_code code_link"
+                      href="../html-reference/html-reference.html#linktarget_li"
+                      target="_blank"
+                      rel="noopener"
+                      >&lt;li&gt;</a
+                    >
+                    and
+                    <a
+                      class="inline_code code_link"
+                      href="../html-reference/html-reference.html#linktarget_summary"
+                      target="_blank"
+                      rel="noopener"
+                      >&lt;summary&gt;</a
+                    >
+                    elements.<br />
+                    <pre class="code code--snippet">
+<code><span class="selector--universal">li::marker</span> <span class="punctuation">{</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">red</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">::placeholder</td>
+                  <td>
+                    represents the placeholder text in an
+                    <a
+                      class="inline_code code_link"
+                      href="../html-reference/html-reference.html#linktarget_input"
+                      target="_blank"
+                      rel="noopener"
+                      >&lt;input&gt;</a
+                    >
+                    or
+                    <a
+                      class="inline_code code_link"
+                      href="../html-reference/html-reference.html#linktarget_textarea"
+                      target="_blank"
+                      rel="noopener"
+                      >&lt;textarea&gt;</a
+                    >
+                    element.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">::file-selector-button</td>
+                  <td>
+                    the button of an
+                    <a
+                      class="inline_code code_link"
+                      href="../html-reference/html-reference.html#linktarget_input"
+                      target="_blank"
+                      rel="noopener"
+                      >&lt;input&gt;</a
+                    >
+                    of type="file"
+                    <pre class="code code--snippet">
+<code><span class="selector--universal">input::file-selector-button</span> <span class="punctuation">{</span>
+    <span class="propertyname">border-radius</span><span class="punctuation">:</span> <span class="valuenum">3px</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <th rowspan="2" class="pseudotable--rowhead">
+                    Inserted Elements
+                  </th>
+                  <td id="linktarget_before" class="codecell">::before</td>
+                  <td>
+                    Creates a pseudo-element that is the first child of the
+                    selected element. It is often used to add cosmetic content
+                    to an element with the
+                    <a class="code_link inline_code" href="#deadlink"
+                      >content</a
+                    >
+                    property. It is inline by default.<br />
+                    <pre class="code code--snippet">
+<code><span class="selector--universal">a::before</span> <span class="punctuation">{</span>
+    <span class="propertyname">content</span><span class="punctuation">:</span> <span class="valuetext">"**"</span><span class="punctuation">;</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">green</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">::after</td>
+                  <td>
+                    Like
+                    <a class="inline_code code_link" href="#linktarget_before"
+                      >::before</a
+                    >, but adds a child to the end<br />
+                    <pre class="code code--snippet">
+<code><span class="selector--universal">.exciting-text::after</span> <span class="punctuation">{</span>
+    <span class="propertyname">content</span><span class="punctuation">:</span> <span class="valuetext">" &lt;- EXCITING!"</span><span class="punctuation">;</span>
+    <span class="propertyname">color</span><span class="punctuation">:</span> <span class="valuetext">green</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="pseudotable--rowhead">User Action</th>
+                  <td class="codecell">::selection</td>
+                  <td>
+                    Applies styles to the part of a document that has been
+                    highlighted by the user.<br /><br />
+                    <span>Try me!</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th rowspan="2" class="pseudotable--rowhead">Media Player</th>
+                  <td class="codecell">::backdrop</td>
+                  <td>
+                    The <span class="codecell">::backdrop</span> CSS
+                    pseudo-element is a box the size of the viewport which is
+                    rendered immediately beneath any element being presented in
+                    fullscreen mode. <br />
+                    <pre class="code code--snippet">
+<code><span class="valuedesc">/* Configure the backdrop style when a video is played in fullscreen mode */
+</span><span class="selector--universal">.video::backdrop</span> <span class="punctuation">{</span>
+    <span class="propertyname">background-color</span><span class="punctuation">:</span> <span class="valuetext">#448</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></code></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">::cue<br />::cue-region</td>
+                  <td>
+                    matches
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API"
+                      target="_blank"
+                      rel="noopener"
+                      >Video Text Tracks Format</a
+                    >
+                    (WebVTT) cues within a selected element
+                  </td>
+                </tr>
+                <tr>
+                  <th rowspan="2" class="pseudotable--rowhead">Shadow DOM</th>
+                  <td class="codecell">::part()</td>
+                  <td>
+                    Represents any element within a
+                    <a class="topic_link" href="#deadlink">shadow tree</a> that
+                    has a matching
+                    <a class="topic_link" href="#deadlink">part</a> attribute.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">::slotted()</td>
+                  <td>
+                    Represents any element that has been placed into a
+                    <a class="topic_link" href="#deadlink"
+                      >slot inside an HTML template</a
+                    >. This only works when used inside CSS placed within a
+                    <a class="topic_link" href="#deadlink">shadow DOM</a>. Note
+                    also that this selector won't select a text node placed into
+                    a slot; it only targets actual elements.
+                  </td>
+                </tr>
+                <tr>
+                  <th class="pseudotable--rowhead">Linking</th>
+                  <td class="codecell">::target-text</td>
+                  <td>
+                    <em>Experimental</em><br />
+                    represents the text that has been scrolled to if the browser
+                    supports
+                    <a class="topic_link" href="#deadlink">text fragments</a>.
+                    It allows authors to choose how to highlight that section of
+                    text.
+                  </td>
+                </tr>
+                <tr>
+                  <th rowspan="2" class="pseudotable--rowhead">User Agent</th>
+                  <td class="codecell">::spelling-error</td>
+                  <td>
+                    <em>Experimental</em><br />
+                    Represents a text segment which the
+                    <a class="topic_link" href="#deadlink">user agent</a> has
+                    flagged as spelled incorrectly.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="codecell">::grammar-error</td>
+                  <td>
+                    <em>Experimental</em><br />
+                    Represents a text segment which the
+                    <a class="topic_link" href="#deadlink">user agent</a> has
+                    flagged as grammatically incorrect.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="contentbox">
+        <h1>Cascade, Specificity, and Inheritance</h1>
+        <p class="subheading">
+          <em>Cascade</em> and <em>specificity</em> are mechanisms that control
+          which css rule applies when there is are conflicting rules for an
+          element.
+        </p>
+        <p class="subheading">
+          <em>Inheritance</em> governs how some elements (by default) inherit
+          values set on the parent and some don't.
+        </p>
+        <div class="contentbox--subcontent">
+          <h2 class="topic-name">Cascade</h2>
+          <h3>Origins &amp; Cascade Layers</h3>
+          <h4>Origin Types</h4>
+          <p></p>
+          <ul>
+            <li>User-agent stylesheets</li>
+            <li>Author stylesheets</li>
+            <li>User stylesheets</li>
+          </ul>
+          <h4>Cascade Layers</h4>
+        </div>
+        <div class="contentbox--subcontent">
+          <h2 class="topic-name">Specificity</h2>
+        </div>
+        <div class="contentbox--subcontent">
+          <h2 class="topic-name">Inheritance</h2>
+        </div>
+      </div>
+
+      <div class="contentbox css_topic">
+        <h1>The Basics</h1>
+        <h2 class="topic-name">The Basics</h2>
+        <h3>The Basics</h3>
+        <h4>The Basics</h4>
+        <table class="topic-table code">
+          <thead class="topic-head">
+            <th class="topic--table--th">Property</th>
+            <th class="topic--table--th">Values</th>
+            <th class="topic--table--th">Notes</th>
+          </thead>
+          <tbody class="topic--body">
+            <tr>
+              <td class="topic--table--td property">
+                <table>
+                  <tr>
+                    <td class="propertyname">color</td>
+                  </tr>
+                  <tr>
+                    <td class="propertydesc">text color</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="topic--table--td value">
+                <table>
+                  <tr>
+                    <td class="valuetext">white</td>
+                    <td class="valuedesc">valid color name</td>
+                  </tr>
+                  <tr>
+                    <td class="valuenum">#ffffff</td>
+                    <td class="valuedesc">hex color number</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="topic--table--td notes"></td>
+            </tr>
+            <tr></tr>
+          </tbody>
+        </table>
+        <p id="deadlink">Fix the link</p>
+        <p class="inprogress">
+          Paused 3/3/23. Go back to the
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+            target="_blank"
+            rel="noopener"
+            >MDN CSS Modules</a
+          >
+          to re-start.
+        </p>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
